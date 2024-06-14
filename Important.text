@@ -1,0 +1,106 @@
+To link the SOCIAL MEDIA LINKS from the DATABASE with THE FRONT END.
+
+<div class="social-media-icons">
+    <?php foreach ($social_media_links as $platform => $link): ?>
+        <?php if (!empty($link)): ?>
+            <a href="<?php echo $link; ?>" target="_blank">
+                <img src="path_to_your_icon_folder/<?php echo $platform; ?>.png" alt="<?php echo ucfirst($platform); ?>">
+            </a>
+        <?php endif; ?>
+    <?php endforeach; ?>
+</div>
+
+
+
+
+<?php
+ob_start(); // Start output buffering
+include "includes/db.php";
+?>
+
+<?php include "includes/head.php"; ?>
+
+  <!-- =============================== -->
+  <!-- Navigation bar -->
+  <!-- =============================== -->
+  <?php include "includes/navigation.php"; ?>
+
+
+<?php 
+
+if(isset($_POST['artisan_create'])){
+
+// common users table data
+$user_gender = $_POST["gender"];
+$user_firstname = $_POST["user_firstname"];
+$user_lastname = $_POST["user_lastname"];
+$username = $_POST["username"];
+$user_email = $_POST["user_email"];
+$user_password = $_POST["user_password"];
+$user_address = $_POST['user_address'];
+$user_phone = $_POST['user_phone'];
+  
+// specific artisan table data
+$artist = isset($_POST['artist']) ? 1 : 0;
+$craftsmen = isset($_POST['craftsmen']) ? 1 : 0;
+$brand_name = $_POST['brand_name'];
+$social_media_links = array(
+  'facebook' => $_POST['artisan_facebook'],
+  'instagram' => $_POST['artisan_instagram'],
+  'tiktok' => $_POST['artisan_tiktok'],
+  'twitter' => $_POST['artisan_twitter'],
+  'youtube' => $_POST['artisan_youtube']
+);
+$country = $_POST['country'];
+$state = $_POST['state'];
+
+if(!empty($brand_name) && !empty($user_firstname) && !empty($username) && !empty($user_email) && !empty($user_password) && !empty($user_address) ){
+
+  //clean inputs
+  $brand_name = mysqli_real_escape_string($connection, $brand_name);
+  $user_firstname = mysqli_real_escape_string($connection, $user_firstname);
+  $user_lastname = mysqli_real_escape_string($connection, $user_lastname);
+  $username = mysqli_real_escape_string($connection, $username);
+  $user_email = mysqli_real_escape_string($connection, $user_email);
+  $user_password = mysqli_real_escape_string($connection, $user_password);
+
+  $user_phone = mysqli_real_escape_string($connection, $user_phone);
+  $user_address = mysqli_real_escape_string($connection, $user_address);
+
+
+  //encrypt password
+  $user_password = password_hash($user_password, PASSWORD_BCRYPT);
+ 
+  
+   // insert user data
+   $query = "INSERT INTO users (user_gender, user_email, user_firstname, user_lastname, username, user_password, user_address, user_phone) ";
+   $query .= "VALUES ('{$user_gender}', '{$user_email}', '{$user_firstname}', '{$user_lastname}', '{$username}', '{$user_password}', '{$user_address}' , '{$user_phone}')";
+   $user_registration_query = mysqli_query($connection, $query);
+
+   if (!$user_registration_query) {
+       die("User Query Failed" . mysqli_error($connection));
+   }
+
+   // get the ID of the inserted user
+   $user_id = mysqli_insert_id($connection);
+
+   // insert artisan data
+   $artisan_query = "INSERT INTO artisans (artisan_ID, is_artist, is_craftsmen, brand_name, social_media_links , artisan_country, artisan_state) ";
+   $artisan_query .= "VALUES ({$user_id}, '{$artist}', '{$craftsmen}', '{$brand_name}', '" . json_encode($social_media_links) . "', '{$country}', '{$state}') ";
+   $artisan_registration_query = mysqli_query($connection, $artisan_query);
+
+   if (!$artisan_registration_query) {
+       die("Artisan Query Failed" . mysqli_error($connection));
+   }
+
+   $message = "<script> alert('Registration has been submitted.')</script>";
+
+   }else {
+     $message = "Fields can not be empty";
+   }
+
+ }else{
+   $message = "";
+ }
+
+?>

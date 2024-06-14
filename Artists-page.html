@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ArtRegalia</title>
+  <script src="https://kit.fontawesome.com/a014b52ca8.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/akar-icons-fonts"></script>
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+  <!-- =============================== -->
+  <!-- Navigation bar -->
+  <!-- =============================== -->
+  <header class="header" data-header>
+    <div class="nav-container">
+
+      <div class="overlay container-fluid" data-overlay></div>
+
+      <a href="index.html" class="logo navbar-brand">
+        ArtRegalia
+      </a>
+
+      <button class="nav-open-btn navbar-toggler" data-nav-open-btn aria-label="open menu">
+        <i class="menu-outline fa-solid fa-bars-staggered navbar-toggler-icon"></i>
+      </button>
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" data-navbar>
+
+        <button class="nav-close-btn" data-nav-close-btn aria-label="close menu">
+          <i class="close-outline fa-solid fa-xmark"></i>
+        </button>
+
+        <a href="index.html" class="nav-logo">
+          ArtRegalia
+        </a>
+
+        <ul class="navbar-list navbar-nav">
+
+          <li class="navbar-item nav-item">
+            <a href="index.html" class="navbar-links nav-link">Home</a>
+          </li>
+
+          <li class="navbar-item nav-item">
+            <a href="community.html" class="navbar-links nav-link">Community</a>
+          </li>
+
+          <li class="navbar-item nav-item">
+            <a href="Artists-page.html" class="navbar-links desk nav-link">Artists</a>
+            <input type="checkbox" id="showArtists" class="dropdown-toggle">
+            <label for="showArtists" class="navbar-links">Artists <i class="fa-solid fa-caret-down"></i></label>
+            <ul class="drop-menu">
+              <li><a class="dropdown-item" href="#">Street Art</a></li>
+              <li><a class="dropdown-item" href="#">Digital Art</a></li>
+              <li><a class="dropdown-item" href="#">Portrait Artists</a></li>
+              <li><a class="dropdown-item" href="#">Wood Artists</a></li>
+              <li><a class="dropdown-item" href="#">Muralists</a></li>
+            </ul>
+          </li>
+
+          <li class="navbar-item nav-item">
+            <a href="craft-page.html" class="navbar-links desk nav-link">Craftsmen</a>
+            <input type="checkbox" id="showMega" class="dropdown-toggle">
+            <label for="showMega" class="navbar-links">Craftsmen<i class="fa-solid fa-caret-down"></i></label>
+            <div class="mega-box">
+              <div class="content">
+                <div class="row">
+                  <header>Bags</header>
+                  <ul class="mega-links">
+                    <li><a class="dropdown-item" href="#">Macramé</a></li>
+                    <li><a class="dropdown-item" href="#">Beaded</a></li>
+                    <li><a class="dropdown-item" href="#">Leather</a></li>
+                    <li><a class="dropdown-item" href="#">Canvas</a></li>
+                  </ul>
+                </div>
+                <div class="row">
+                  <header>Bracelets</header>
+                  <ul class="mega-links">
+                    <li><a class="dropdown-item" href="#">Macramé</a></li>
+                    <li><a class="dropdown-item" href="#">Beaded</a></li>
+                    <li><a class="dropdown-item" href="#">Leather</a></li>
+                    <li><a class="dropdown-item" href="#">Metal</a></li>
+                    <li><a class="dropdown-item" href="#">Charm</a></li>
+                    <li><a class="dropdown-item" href="#">Woven</a></li>
+                  </ul>
+                </div>
+                <div class="row">
+                  <header>Home Decor</header>
+                  <ul class="mega-links">
+                    <li><a class="dropdown-item" href="#">Textiles</a></li>
+                    <li><a class="dropdown-item" href="#">Pottery</a></li>
+                    <li><a class="dropdown-item" href="#">Woodcraft</a></li>
+                    <li><a class="dropdown-item" href="#">Basketry</a></li>
+                    <li><a class="dropdown-item" href="#">Lighting</a></li>
+                    <li><a class="dropdown-item" href="#">Paintings</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="navbar-item nav-item">
+            <a href="shopall.html" class="navbar-links nav-link">Shop all</a>
+          </li>
+
+          <li class="navbar-item nav-item">
+            <a href="shops.html" class="navbar-links nav-link">Shops</a>
+          </li>
+
+          <li class="navbar-item nav-item">
+            <a href="about.html" class="navbar-links nav-link">About Us</a>
+          </li>
+
+        </ul>
+
+
+        <ul class="nav-action-list navbar-nav me-2">
+
+          <li class="nav-item">
+
+            <button class="nav-action-btn srch-btn nav-link btn btn-link" id="searchButton">
+              <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+              <span class="nav-action-text">Search</span>
+            </button>
+          </li>
+
+
+          <li class="nav-item ms-2">
+            <button class="nav-action-btn notify-btn nav-link btn btn-link ">
+              <i class="fa-solid fa-inbox" aria-hidden="true"></i>
+              <span class="icon-badge-btn">10</span>
+              <span class="nav-action-text">Notifications</span>
+
+              <data class="nav-action-badge-notify" value="12" aria-hidden="true">12</data>
+            </button>
+          </li>
+
+          <li class="nav-item ms-2">
+            <a href="cart.html" class="nav-action-btn nav-link">
+              <i class="fa-solid fa-bag-shopping" aria-hidden="true"></i>
+              <span class="icon-badge-btn">4</span>
+              <data class="nav-action-text" value="400.00">Basket: <strong>400EGP</strong></data>
+
+              <data class="nav-action-badge" value="4" aria-hidden="true">4</data>
+            </a>
+          </li>
+
+          <li class="navbar-item side-profile nav-item me-auto">
+            <a href="#" class="navbar-links desk nav-link">Profile</a>
+            <i class="fa-solid fa-user desk" aria-hidden="true"></i>
+            <input type="checkbox" id="showProfile" class="dropdown-toggle">
+            <label for="showProfile" class="navbar-links"><i class="fa-solid fa-user" aria-hidden="true"></i>Profile <i
+                class="fa-solid fa-caret-down"></i></label>
+            <ul class="drop-menu profile">
+              <li><a class="nav-link" href="./user-profile.html"><i class="fa-solid fa-user"></i>View Profile</a></li>
+              <li><a class="nav-link" href="./wishlist.html"><i class="fa-solid fa-heart"></i>Wishlist</a></li>
+              <li><a class="nav-link" href="help.html"><i class="fa-solid fa-circle-question"></i>Help</a></li>
+              <li><a class="nav-link" href="settings.html"><i class="fa-solid fa-gears"></i>Settings</a></li>
+              <li><a class="nav-link" href="Registration.html"><i class="fa-solid fa-lock"></i>Sign-in/Sign-up</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="craft-main">
+
+
+    <div class="container mt-4">
+      <div class="row">
+
+        <nav class="nav-breadcrumb" aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Artists</li>
+          </ol>
+        </nav>
+        <div class="col-12 d-flex justify-content-between align-items-center">
+          <!-- Filter Button -->
+          <div>
+
+            <button class="btn" id="fixed-filter-btn" type="button" data-bs-toggle="offcanvas"
+              data-bs-target="#filterCanvas" aria-controls="filterCanvas">
+              <img class="filter-image" src="./images/filter.256x203.png" alt="filter">
+              Filter
+            </button>
+
+            <button class="btn btn-primary " id="filter-btn" type="button">
+              Street Artist
+            </button>
+
+            <button class="btn btn-primary " id="filter-btn" type="button">
+              Portrait Artists
+            </button>
+
+            <button class="btn btn-primary " id="filter-btn" type="button">
+              Muralists
+            </button>
+          </div>
+
+          <!-- Sorting and Showing Info -->
+
+          <div>
+            <span>12 items </span>
+
+            <button class="btn dropdown" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Sort as you like
+            </button>
+            <i class="fa-solid fa-chevron-right" id="sort-chevron"></i>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="sort-dropdown-item" href="#">Most Relevant</a></li>
+              <li><a class="sort-dropdown-item" href="#">Price, High to Low</a></li>
+              <li><a class="sort-dropdown-item" href="#">Price, Low to High</a></li>
+              <li><a class="sort-dropdown-item" href="#">New</a></li>
+              <li><a class="sort-dropdown-item" href="#">Top Rated</a></li>
+              <li><a class="sort-dropdown-item" href="#">Sort, A - Z</a></li>
+              <li><a class="sort-dropdown-item" href="#">Sort, Z - A</a></li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Offcanvas Filter Sidebar -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="filterCanvas" aria-labelledby="filterCanvasLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="filterCanvasLabel">Filter</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <!-- Filters -->
+        <form class="filter-form" action="">
+          <div class="mb-3">
+            <button class="btn  filter-btn w-100 d-flex justify-content-between align-items-center toggle-dropdown"
+              type="button" id="dropdownMenuBrand" data-bs-toggle="dropdown" aria-expanded="false">
+              Shop / Artist
+              <i class="fa-solid fa-plus"></i>
+            </button>
+
+            <ul class=" dropdown-menu-container d-none list-unstyled">
+              <li><label class="filter-dropdown-item w-100"><input type="checkbox" class="form-check-input me-1">Artist
+                  1</label></li>
+              <li><label class="filter-dropdown-item w-100"><input type="checkbox" class="form-check-input me-1">Artist
+                  2</label></li>
+              <li><label class="filter-dropdown-item w-100"><input type="checkbox" class="form-check-input me-1">Artist
+                  3</label></li>
+              <a href="#" id="toggleBrands" class="show-more">Show More</a>
+            </ul>
+          </div>
+
+          <div class="mb-3">
+            <button
+              class="btn  filter-btn w-100 d-flex justify-content-between align-items-center toggle-dropdown-category"
+              type="button" id="dropdownMenuBrand" data-bs-toggle="dropdown" aria-expanded="false">
+              Category
+              <i class="fa-solid fa-plus"></i>
+            </button>
+
+            <ul class=" dropdown-menu-container d-none list-unstyled">
+              <li><label class="filter-dropdown-item w-100 category-item"><input type="checkbox"
+                    class="form-check-input me-1">Bags</label></li>
+              <li><label class="filter-dropdown-item w-100 category-item"><input type="checkbox"
+                    class="form-check-input me-1">Bracelets</label></li>
+              <li><label class="filter-dropdown-item w-100 category-item"><input type="checkbox"
+                    class="form-check-input me-1">Home
+                  Decor
+                </label></li>
+
+              <a href="#" id="toggleCategories" class="show-more">Show More</a>
+            </ul>
+          </div>
+
+          <div class="mb-3">
+            <button
+              class="btn  filter-btn w-100 d-flex justify-content-between align-items-center toggle-dropdown-rating"
+              type="button" id="dropdownMenuBrand" data-bs-toggle="dropdown" aria-expanded="false">
+              Rating
+              <i class="fa-solid fa-plus"></i>
+            </button>
+
+            <ul class=" dropdown-menu-container d-none list-unstyled">
+              <li><label class="filter-dropdown-item w-100 rating-item"><input type="checkbox"
+                    class="form-check-input me-1">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </label></li>
+              <li><label class="filter-dropdown-item w-100 rating-item"><input type="checkbox"
+                    class="form-check-input me-1">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </label></li>
+              <li><label class="filter-dropdown-item w-100 rating-item"><input type="checkbox"
+                    class="form-check-input me-1">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </label></li>
+              <li><label class="filter-dropdown-item w-100 rating-item"><input type="checkbox"
+                    class="form-check-input me-1">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </label></li>
+              <li><label class="filter-dropdown-item w-100 rating-item"><input type="checkbox"
+                    class="form-check-input me-1">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </label></li>
+
+            </ul>
+          </div>
+
+
+          <div class="mb-3">
+            <button
+              class="btn  filter-btn w-100 d-flex justify-content-between align-items-center toggle-dropdown-price"
+              type="button" id="dropdownMenuBrand" data-bs-toggle="dropdown" aria-expanded="false">
+              Price
+              <i class="fa-solid fa-plus"></i>
+            </button>
+
+            <ul class=" dropdown-menu-container d-none list-unstyled">
+              <li><label class="filter-dropdown-item w-100 price-item"><input type="checkbox"
+                    class="form-check-input me-1">40£ - 200£</label></li>
+              <li><label class="filter-dropdown-item w-100 price-item"><input type="checkbox"
+                    class="form-check-input me-1">200£ - 500£</label></li>
+              <li><label class="filter-dropdown-item w-100 price-item"><input type="checkbox"
+                    class="form-check-input me-1">500£ - 1000£
+                </label></li>
+              <li><label class="filter-dropdown-item w-100 price-item"><input type="checkbox"
+                    class="form-check-input me-1">1000£ - 2000£
+                </label></li>
+              <li><label class="filter-dropdown-item w-100 price-item"><input type="checkbox"
+                    class="form-check-input me-1">2000£ - 4000£
+                </label></li>
+
+            </ul>
+          </div>
+
+          <button type="submit" class="btn btn-apply-filter">Apply Filters</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Products Section -->
+    <div class="row mt-4">
+      <div class="product-container col-12 col-md-8">
+
+        <div class="product">
+
+          <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            </div>
+
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./images/craftart.jpg" alt="T-Shirt Ralph Lauren"
+                  class="product-image img-fluid d-block w-100">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/art.jpg" alt="Second Image" class="d-block w-100">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/craft.jpg" alt="Third Image" class="d-block w-100">
+              </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#productCarousel"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+          <div class="product-description  ">
+
+            <div class="info ">
+              <h1>LOREM IPSUM</h1>
+              <p>
+                Lorem Ipsum is simply dummy
+                printing and typesetting industry
+              </p>
+            </div>
+
+            <div class="price  d-flex align-items-start">
+              8999
+            </div>
+          </div>
+
+          <div class="product-sidebar">
+
+            <a href="A-productDetails.html">
+              <button class="buy">
+                <i class="fa-solid fa-shopping-bag"></i>
+                <span>START ORDER</span>
+              </button>
+            </a>
+
+            <!-- <button class="info">
+              <i class="fa-solid fa-info"></i>
+              <span>MORE INFO</span>
+            </button> -->
+
+            <button class="seller" title="Hady Hossam">
+              <i class="ri-user-6-fill"></i>
+              <span>Seller</span>
+            </button>
+
+            <button class="rate">
+              <i class="fa-solid fa-star"></i>
+              <span>4.8</span>
+            </button>
+
+            <button class="Wishlist">
+              <i class="fa-solid fa-heart"></i>
+              <span>Wishlist</span>
+            </button>
+
+            <!-- <button class="colors">
+              <i class="fa-solid fa-palette"></i>
+              <span>
+                <a href="" class="color black"></a>
+                <a href="" class="color white"></a>
+                <a href="" class="color red"></a>
+                <a href="" class="color red"></a>
+              </span>
+            </button> -->
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+
+    </div>
+  </main>
+
+
+
+  <!-- =============================== -->
+  <!-- Footer Section -->
+  <!-- =============================== -->
+
+  <footer class="footer">
+
+    <div class="footer-container">
+      <div class="footer_inner">
+        <div class="layout">
+
+          <div class="layout_item w-50">
+            <div class="newsletter">
+              <h3 class="newsletter_title">Get updates on fun stuff you probably want to know about in your inbox.
+              </h3>
+              <form action="">
+                <input type="text" placeholder="Email Address">
+                <button>
+                  <i class="ai-arrow-right"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+
+          <div class="layout_item w-25">
+            <nav class="c-nav-tool">
+              <h4 class="c-nav-tool_title">Menu</h4>
+              <ul class="c-nav-tool_list">
+                <li>
+                  <a href="index.html" class="c-link">Home</a>
+                </li>
+
+                <li>
+                  <a href="community.html" class="c-link">Community</a>
+                </li>
+
+                <li>
+                  <a href="about.html" class="c-link">About Us</a>
+                </li>
+                <li>
+                  <a href="blog.html" class="c-link">Blog</a>
+                </li>
+                <li>
+                  <a href="shops.html" class="c-link">Shops</a>
+                </li>
+                <li>
+                  <a href="shopall.html" class="c-link">Shop all</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="layout_item w-25">
+            <nav class="c-nav-tool">
+              <h4 class="c-nav-tool_title">Support</h4>
+              <ul class="c-nav-tool_list">
+
+                <li class="c-nav-tool_item">
+                  <a href="/pages/shipping-returns" class="c-link">Shipping &amp; Returns</a>
+                </li>
+
+                <li class="c-nav-tool_item">
+                  <a href="/pages/help" class="c-link">Help &amp; FAQ</a>
+                </li>
+
+                <li class="c-nav-tool_item">
+                  <a href="/pages/terms-conditions" class="c-link">Terms &amp; Conditions</a>
+                </li>
+
+                <li class="c-nav-tool_item">
+                  <a href="/pages/privacy-policy" class="c-link">Privacy Policy</a>
+                </li>
+
+                <li class="c-nav-tool_item">
+                  <a href="/pages/contact" class="c-link">Contact</a>
+                </li>
+
+                <li class="c-nav-tool_item">
+                  <a href="/account/login" class="c-link">
+                    Login
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+        </div>
+
+        <div class="layout c-2">
+          <div class="layout_item w-50">
+            <ul class="flex">
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                  <path fill="none" d="M0 0h24v24H0z" />
+                  <path
+                    d="M12 6.654a6.786 6.786 0 0 1 2.596 5.344A6.786 6.786 0 0 1 12 17.34a6.786 6.786 0 0 1-2.596-5.343A6.786 6.786 0 0 1 12 6.654zm-.87-.582A7.783 7.783 0 0 0 8.4 12a7.783 7.783 0 0 0 2.728 5.926 6.798 6.798 0 1 1 .003-11.854zm1.742 11.854A7.783 7.783 0 0 0 15.6 12a7.783 7.783 0 0 0-2.73-5.928 6.798 6.798 0 1 1 .003 11.854z" />
+                </svg>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                  <path fill="none" d="M0 0h24v24H0z" />
+                  <path
+                    d="M1 4h22v2H1V4zm0 14h22v2H1v-2zm18.622-3.086l-.174-.87h-1.949l-.31.863-1.562.003c1.005-2.406 1.75-4.19 2.236-5.348.127-.303.353-.457.685-.455.254.002.669.002 1.245 0L21 14.912l-1.378.003zm-1.684-2.062h1.256l-.47-2.18-.786 2.18zM7.872 9.106l1.57.002-2.427 5.806-1.59-.001c-.537-2.07-.932-3.606-1.184-4.605-.077-.307-.23-.521-.526-.622-.263-.09-.701-.23-1.315-.419v-.16h2.509c.434 0 .687.21.769.64l.62 3.289 1.574-3.93zm3.727.002l-1.24 5.805-1.495-.002 1.24-5.805 1.495.002zM14.631 9c.446 0 1.01.138 1.334.267l-.262 1.204c-.293-.118-.775-.277-1.18-.27-.59.009-.954.256-.954.493 0 .384.632.578 1.284.999.743.48.84.91.831 1.378-.01.971-.831 1.929-2.564 1.929-.791-.012-1.076-.078-1.72-.306l.272-1.256c.656.274.935.361 1.495.361.515 0 .956-.207.96-.568.002-.257-.155-.384-.732-.702-.577-.317-1.385-.756-1.375-1.64C12.033 9.759 13.107 9 14.63 9z" />
+                </svg>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                  <path fill="none" d="M0 0h24v24H0z" />
+                  <path
+                    d="M20.067 8.478c.492.88.556 2.014.3 3.327-.74 3.806-3.276 5.12-6.514 5.12h-.5a.805.805 0 0 0-.794.68l-.04.22-.63 3.993-.032.17a.804.804 0 0 1-.794.679H7.72a.483.483 0 0 1-.477-.558L7.418 21h1.518l.95-6.02h1.385c4.678 0 7.75-2.203 8.796-6.502zm-2.96-5.09c.762.868.983 1.81.752 3.285-.019.123-.04.24-.062.36-.735 3.773-3.089 5.446-6.956 5.446H8.957c-.63 0-1.174.414-1.354 1.002l-.014-.002-.93 5.894H3.121a.051.051 0 0 1-.05-.06l2.598-16.51A.95.95 0 0 1 6.607 2h5.976c2.183 0 3.716.469 4.523 1.388z" />
+                </svg>
+              </li>
+            </ul>
+          </div>
+
+          <div class="layout_item w-25 m-auto">
+            <ul class="flex">
+              <li>
+                <a href="#">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-brands fa-x-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="layout_item w-25" style="display:flex;justify-content: end;align-items: center;">
+            <a href="#" id="top" title="back to top">
+              <i class="fa-solid fa-circle-arrow-up"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+      <div class="footer_copyright">
+        <p>&copy; 2024 ArtRegalia Company Inc.</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="./javascript/craft.js" charset="UTF-8"></script>
+
+</body>
+
+</html>
