@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Administration</title>
+
+  <link href="./css/custom.css" rel="stylesheet">
+  <!-- Bootstrap Core CSS -->
+  <link href="./css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- MetisMenu CSS -->
+  <link href="./css/metisMenu.min.css" rel="stylesheet">
+
+  <!-- Timeline CSS -->
+  <link href="./css/timeline.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="./css/startmin.css" rel="stylesheet">
+
+  <!-- Morris Charts CSS -->
+  <link href="./css/morris.css" rel="stylesheet">
+
+  <!-- Custom Fonts -->
+  <link href="./css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/a014b52ca8.js" crossorigin="anonymous"></script>
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+</head>
+
+<body>
+
+<div id="wrapper">
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="index.html">ArtRegalia Administration</a>
+      </div>
+
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <ul class="nav navbar-nav navbar-left navbar-top-links">
+        <li><a href="../index.html"><i class="fa fa-home fa-fw"></i> Website</a></li>
+      </ul>
+
+      <ul class="nav navbar-right navbar-top-links">
+        <li class="dropdown navbar-inverse">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+            <i class="fa fa-bell fa-fw"></i> <b class="caret"></b>
+          </a>
+          <ul class="dropdown-menu dropdown-alerts">
+            <li>
+              <a href="#">
+                <div>
+                  <i class="fa fa-comment fa-fw"></i> New Comment
+                  <span class="pull-right text-muted small">4 minutes ago</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div>
+                  <i class="fa fa-twitter fa-fw"></i> 3 New Followers
+                  <span class="pull-right text-muted small">12 minutes ago</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div>
+                  <i class="fa fa-envelope fa-fw"></i> Message Sent
+                  <span class="pull-right text-muted small">4 minutes ago</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div>
+                  <i class="fa fa-tasks fa-fw"></i> New Task
+                  <span class="pull-right text-muted small">4 minutes ago</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div>
+                  <i class="fa fa-upload fa-fw"></i> Server Rebooted
+                  <span class="pull-right text-muted small">4 minutes ago</span>
+                </div>
+              </a>
+            </li>
+            
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+            <i class="fa fa-user fa-fw"></i> hady <b class="caret"></b>
+          </a>
+          <ul class="dropdown-menu dropdown-user">
+            <li>
+              <a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+            </li>
+            <li class="divider"></li>
+            <li>
+              <a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <!-- /.navbar-top-links -->
+    </nav>
+
+    <aside class="sidebar navbar-default" role="navigation">
+      <div class="sidebar-nav navbar-collapse">
+        <ul class="nav" id="side-menu">
+          <li class="sidebar-search">
+            <div class="input-group custom-search-form">
+              <input type="text" class="form-control" placeholder="Search...">
+              <span class="input-group-btn">
+                <button class="btn btn-primary" type="button">
+                  <i class="fa fa-search"></i>
+                </button>
+              </span>
+            </div>
+            <!-- /input-group -->
+          </li>
+          <li>
+            <a href="index.html" class="active"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-users fa-fw"></i> Users<span class="fa arrow"></span></a>
+            <ul class="nav nav-second-level">
+              <li>
+                <a href="sign_up_requests.html">Sign-up Requests</a>
+              </li>
+              <li>
+                <a href="artisans.html">Artisans</a>
+              </li>
+              <li>
+                <a href="customers.html">Customers</a>
+              </li>
+              <li>
+                <a href="operations.html">Operations</a>
+              </li>
+              <li>
+                <a href="view_all_users.html">View all users</a>
+              </li>
+              <li>
+                <a href="add_user.html">Add user</a>
+              </li>
+            </ul>
+            
+
+          </li>
+          <li>
+            <a href="#"><i class="fa  fa-list-alt fa-fw"></i> Categories<span class="fa arrow"></span></a>
+            <ul class="nav nav-second-level">
+              <li>
+                <a href="categories.html">View all Categories</a>
+              </li>
+            </ul>
+            
+            <li>
+            <a href="#"><i class="fa  fa-cubes fa-fw"></i> Products<span class="fa arrow"></span></a>
+            <ul class="nav nav-second-level">
+              <li>
+                <a href="categories.html">View all Products</a>
+              </li>
+            </ul>
+          </li>
+
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-pencil-square-o fa-fw"></i> Posts<span class="fa arrow"></span></a>
+            <ul class="nav nav-second-level">
+              <li>
+                <a href="view_all_posts.html">View all Posts</a>
+              </li>
+              <li>
+                <a href="offers.html">Offers</a>
+              </li>
+              <li>
+                <a href="events.html">Events</a>
+              </li>
+              <li>
+                <a href="add_post.html">Add a Post</a>
+              </li>
+            </ul>
+            
+
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-comments fa-fw"></i> Comments<span class="fa arrow"></span></a>
+            <ul class="nav nav-second-level">
+              <li>
+                <a href="categories.html">View all Comments</a>
+              </li>
+            </ul>
+            
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-file-text-o fa-fw"></i> Reports<span class="fa arrow"></span></a>
+            <ul class="nav nav-second-level">
+              <li>
+                <a href="view_all_reports.html">View all reports</a>
+              </li>
+            </ul>
+          
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-ticket fa-fw"></i> Tickets<span class="fa arrow"></span></a>
+            <ul class="nav nav-second-level">
+              <li>
+                <a href="view_all_tickets.html">View all Tickets</a>
+              </li>
+            </ul>
+          
+          </li>
+          <li>
+            <a href="tables.html"><i class="fa fa-truck fa-fw"></i> Orders</a>
+          </li>
+          
+        </ul>
+      </div>
+    </aside>
+
+    <div id="page-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">Artisans</h1>
+                </div>
+            </div>
+
+            <form class="admin_table" method="POST" action="sign_up_requests.html">
+                <div class="table-container request_table">
+                    <div class="controls">
+                        <div class="entries">
+                            Show
+                            <select id="entries-select" name="entries_select" onchange="this.form.submit()">
+                                <option value="5">5</option>
+                                <option value="10">10</option>
+                                <option value="25">25</option>
+                            </select>
+                            entries
+                        </div>
+                        <button class="page-link" type="submit" name="delete_selected">Delete Selected</button>
+                        <div>
+                            Search: <input placeholder="Search Entries" class="cat_Search" type="text" id="search-input" name="search_input" value="">
+                        </div>
+                    </div>
+                    <table id="requests-table">
+                        <thead>
+                            <tr>
+                                <th><input type="checkbox" id="select-all-checkbox" onclick="toggleSelectAll(this)"></th>
+                                <th>
+                                    <button class="btn-header" type="submit" name="sort_column" value="artisan_id">Artisan ID <i class="fa-solid fa-sort"></i></button>
+                                    <input type="hidden" name="sort_order" value="">
+                                </th>
+                                <th>
+                                    <button class="btn-header" type="submit" name="sort_column" value="user_gender">Gender <i class="fa-solid fa-sort"></i></button>
+                                </th>
+                                <th>
+                                    <button class="btn-header" type="submit" name="sort_column" value="user_email">E-mail <i class="fa-solid fa-sort"></i></button>
+                                </th>
+                                <th>
+                                    <button class="btn-header" type="submit" name="sort_column" value="username">Username <i class="fa-solid fa-sort"></i></button>
+                                </th>
+                                <th>
+                                    <button class="btn-header" type="submit" name="sort_column" value="user_phone">Phone No. <i class="fa-solid fa-sort"></i></button>
+                                </th>
+                                <th>
+                                    <button class="btn-header" type="submit" name="sort_column" value="user_firstname">First Name <i class="fa-solid fa-sort"></i></button>
+                                </th>
+                                <th>
+                                    <button class="btn-header" type="submit" name="sort_column" value="user_lastname">Last Name <i class="fa-solid fa-sort"></i></button>
+                                </th>
+                                <th>
+                                    <button class="btn-header" type="submit" name="sort_column" value="user_address">Address <i class="fa-solid fa-sort"></i></button>
+                                </th>
+                                <th>
+                                    <button class="btn-header" type="submit" name="sort_column" value="brief">Brief <i class="fa-solid fa-sort"></i></button>
+                                </th>
+                                <th>
+                                    <button class="btn-header" type="submit" name="sort_column" value="is_artist">is_Artist <i class="fa-solid fa-sort"></i></button>
+                                </th>
+                                <th>
+                                    <button class="btn-header" type="submit" name="sort_column" value="is_craftsmen">is_Craftsmen <i class="fa-solid fa-sort"></i></button>
+                                </th>
+                                <th>
+                                    <button class="btn-header" type="submit" name="sort_column" value="brand_name">Brand Name <i class="fa-solid fa-sort"></i></button>
+                                </th>
+                                <th>
+                                    <button class="btn-header" type="submit" name="sort_column" value="social_media_links">Social Links <i class="fa-solid fa-sort"></i></button>
+                                </th>
+                                <th>
+                                    <button class="btn-header" type="submit" name="sort_column" value="artisan_country">Country <i class="fa-solid fa-sort"></i></button>
+                                </th>
+                                <th>
+                                    <button class="btn-header" type="submit" name="sort_column" value="artisan_state">State <i class="fa-solid fa-sort"></i></button>
+                                </th>
+
+                                <th>Edit</th>
+                                <th>Delete</th>
+                            </tr>
+                        </thead>
+                        <tbody id="table-body">
+
+                        </tbody>
+                    </table>
+
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination" id="pagination">
+                                <li class="page-item"><button class="page-link" type="submit" name="current_page" value="">Previous</button></li>
+                                <li class="page-item "><button class="page-link" type="submit" name="current_page" value="">1</button></li>
+                                <li class="page-item"><button class="page-link" type="submit" name="current_page" value="">Next</button></li>
+                        </ul>
+                    </nav>
+                </div>
+            </form>
+
+        </div>
+    </div>
+</div>
+        </div>
+      </div>
+
+      <!-- JS Functionality: SIDEBAR DROPDOWN FUNCTIONALITY -->
+      <div class="row">
+        <div class="col-lg-12">
+            <div id="morris-area-chart" style="display:none"></div>
+            <div id="morris-bar-chart" style="display:none"></div>
+            <div id="morris-donut-chart" style="display:none"></div>
+        </div>
+      </div>
+
+
+    </div>
+
+</div>
+
+</div>
+
+
+
+<!-- <script src="js/custom.js"></script> -->
+<script src="js/edit_modal.js"></script>
+<!-- jQuery -->
+<script src="js/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+
+<!-- Metis Menu Plugin JavaScript -->
+<script src="js/metisMenu.min.js"></script>
+
+<!-- DataTables JavaScript -->
+<script src="js/dataTables/jquery.dataTables.min.js"></script>
+<script src="js/dataTables/dataTables.bootstrap.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="js/startmin.js"></script>
+
+</body>
+
+</html>
