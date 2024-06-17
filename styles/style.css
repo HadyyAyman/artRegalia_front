@@ -1630,7 +1630,7 @@ body {
     padding: 0 1rem;
   }
 
-  form {
+  .footer-container form {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -2475,48 +2475,48 @@ body {
     gap: 5px;
   }
 
-/* Hide the default checkbox */
-.custom-checkbox input[type="checkbox"] {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
-}
+  /* Hide the default checkbox */
+  .custom-checkbox input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
 
-/* Create a custom checkbox */
-.custom-checkbox .checkmark {
-  position: relative;
-  display: inline-block;
-  width: 18px;
-  height: 18px;
-  background-color: transparent;
-  border: 2px solid var(--color9);
-  border-radius: 3px;
-}
+  /* Create a custom checkbox */
+  .custom-checkbox .checkmark {
+    position: relative;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-color: transparent;
+    border: 2px solid var(--color9);
+    border-radius: 3px;
+  }
 
-/* Style the checkmark/indicator (hidden by default) */
-.custom-checkbox .checkmark::after {
-  content: "";
-  position: absolute;
-  display: none;
-}
+  /* Style the checkmark/indicator (hidden by default) */
+  .custom-checkbox .checkmark::after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
 
-/* Show the checkmark when checked */
-.custom-checkbox input[type="checkbox"]:checked ~ .checkmark::after {
-  display: block;
-}
+  /* Show the checkmark when checked */
+  .custom-checkbox input[type="checkbox"]:checked~.checkmark::after {
+    display: block;
+  }
 
-/* Style the checkmark/indicator */
-.custom-checkbox .checkmark::after {
-  left: 5px;
-  top: 1px;
-  width: 5px;
-  height: 10px;
-  border: solid var(--color9);
-  border-width: 0 3px 3px 0;
-  transform: rotate(45deg);
-}
+  /* Style the checkmark/indicator */
+  .custom-checkbox .checkmark::after {
+    left: 5px;
+    top: 1px;
+    width: 5px;
+    height: 10px;
+    border: solid var(--color9);
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+  }
 
   .address-form input[type="text"],
   .address-form input[type="tel"] {
@@ -4234,75 +4234,75 @@ body {
   /* ADDING NEW PRODUCTS STYLING  */
   /* =================================== */
 
-.add-products-main {
-  display: flex;
-  justify-content: center;
-  min-height: 500px;
-  padding-top: 125px;
-  background-color: var(--color1);
+  .add-products-main {
+    display: flex;
+    justify-content: center;
+    min-height: 500px;
+    padding-top: 125px;
+    background-color: var(--color1);
 
-}
+  }
 
-.add-products-form-container {
-  width: 80%;
-  max-width: 500px;
-  text-align: center;
-  background-color: var(--color2);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-}
+  .add-products-form-container {
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+    background-color: var(--color2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
 
-.add-products-main h2 {
-  text-align: center;
-  margin-bottom: 40px;
-  font-weight: bold;
-  color: var(--color8);
-}
+  .add-products-main h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: bold;
+    color: var(--color8);
+  }
 
-.needs-validation {
-  display: flex;
-  flex-direction: column;
-  border-bottom: none;
-}
+  .needs-validation {
+    display: flex;
+    flex-direction: column;
+    border-bottom: none;
+  }
 
-.add-products-form-label {
-  font-weight: bold;
-}
+  .add-products-form-label {
+    font-weight: bold;
+  }
 
-.add-products-form-control {
-  border-radius: 5px;
-  box-shadow: none;
-  background-color: var(--color3);
-}
+  .add-products-form-control {
+    border-radius: 5px;
+    box-shadow: none;
+    background-color: var(--color3);
+  }
 
-#image {
-  border: 1px solid #ced4da;
-  padding: 0.375rem 0.75rem;
-  cursor: pointer;
-}
+  #image {
+    border: 1px solid #ced4da;
+    padding: 0.375rem 0.75rem;
+    cursor: pointer;
+  }
 
-.add-products-form-control:focus {
-  border-color: var(--color9);
-  box-shadow: 0 0 0 0.2rem var(--color9);
-}
+  .add-products-form-control:focus {
+    border-color: var(--color9);
+    box-shadow: 0 0 0 0.2rem var(--color9);
+  }
 
-.add-products-btn {
-  display: block;
-  width: 66%;
-  padding: 10px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  color: var(--color4);
-  background-color: var(--color7);
-  transition: background-color 0.3s ease, border-color 0.3s ease;
-}
+  .add-products-btn {
+    display: block;
+    width: 66%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: var(--color4);
+    background-color: var(--color7);
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+  }
 
-.add-products-btn:hover {
-  color: var(--color4);
-  background-color: var(--color9);
-  box-shadow: 0 0 5px var(--color9);
-}
+  .add-products-btn:hover {
+    color: var(--color4);
+    background-color: var(--color9);
+    box-shadow: 0 0 5px var(--color9);
+  }
 
   /* =================================== */
   /* SETTINGS STYLING  */
@@ -4357,7 +4357,7 @@ body {
     border-radius: 5px;
     width: 100%;
   }
-  
+
   .settings-submit-btn:hover {
     color: var(--color4);
     background-color: var(--color9);
@@ -4415,7 +4415,7 @@ body {
     display: block;
   }
 
-  
+
   /* =================================== */
   /*  CREDIT CARD STYLING  */
   /* =================================== */
@@ -4436,29 +4436,29 @@ body {
     background-color: var(--color2);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   }
-  
+
   .credit-card-main h2 {
     margin-bottom: 20px;
     color: var(--color8);
     text-align: center;
   }
 
-  #credit-card-paymentForm{
+  #credit-card-paymentForm {
     display: flex;
     flex-direction: column;
     border-bottom: none;
   }
-  
+
   .credit-card-form-group {
     margin-bottom: 15px;
   }
-  
+
   .credit-card-form-group label {
     display: block;
     margin-bottom: 5px;
     color: var(--color6);
   }
-  
+
   .credit-card-form-group input {
     width: 100%;
     padding: 10px;
@@ -4466,7 +4466,7 @@ body {
     border-radius: 4px;
   }
 
-    .credit-card-btn {
+  .credit-card-btn {
     width: 45%;
     padding: 10px;
     background-color: var(--color7);
@@ -4476,16 +4476,16 @@ body {
     font-size: 16px;
     cursor: pointer;
   }
-  
+
   .credit-card-btn:hover {
     color: var(--color4);
     background-color: var(--color9);
     box-shadow: 0 0 5px var(--color9);
   }
 
-/* =================================== */
-/* CONTACT-US STYLING  */
-/* =================================== */
+  /* =================================== */
+  /* CONTACT-US STYLING  */
+  /* =================================== */
 
   .contactUs-main {
     display: flex;
@@ -4503,8 +4503,8 @@ body {
     background-color: var(--color2);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   }
-  
-  #contactForm{
+
+  #contactForm {
     display: flex;
     flex-direction: column;
     align-items: stretch;
@@ -4516,17 +4516,17 @@ body {
     color: #333;
     text-align: center;
   }
-  
+
   .contactUs-form-group {
     margin-bottom: 15px;
   }
-  
+
   .contactUs-form-group label {
     display: block;
     margin-bottom: 5px;
     color: #555;
   }
-  
+
   .contactUs-form-group input,
   .contactUs-form-group textarea {
     width: 100%;
@@ -4534,13 +4534,13 @@ body {
     border: 1px solid #ccc;
     border-radius: 4px;
   }
-  
-  .contact-footer{
+
+  .contact-footer {
     display: flex;
     justify-content: center;
   }
 
-  .contactUs-btn{
+  .contactUs-btn {
     width: 45%;
     padding: 10px;
     background-color: var(--color7);
@@ -4548,7 +4548,7 @@ body {
     border-radius: 4px;
     color: var(--color4);
     font-size: 16px;
-    cursor: pointer;  
+    cursor: pointer;
   }
 
   .contactUs-btn:hover {
