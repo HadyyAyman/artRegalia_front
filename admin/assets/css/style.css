@@ -1,0 +1,97 @@
+/*================================================================================
+	Item Name: Modern Admin - Clean Bootstrap 4 Dashboard HTML Template
+	Version: 1.0
+	Author: PIXINVENT
+	Author URL: http://www.themeforest.net/user/pixinvent
+================================================================================
+
+NOTE:
+------
+PLACE HERE YOUR OWN SCSS CODES AND IF NEEDED, OVERRIDE THE STYLES FROM THE OTHER STYLESHEETS.
+WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BETTER LIKE THIS.  */
+.color-primary{
+	color: #285daf !important;
+}
+.color-secondary{
+	color:#3f80cd !important;
+}
+.color-third{
+	color:#4ab69c !important;
+}
+.color-forth{
+	color:#8d4cba !important;
+}
+.color-fifth{
+	color:#723d93 !important;
+}
+.bg-primary{
+	background-color: #285daf !important;
+}
+.bg-secondary{
+	background-color:#3f80cd !important;
+}
+.bg-third{
+	background-color:#4ab69c !important;
+}
+.btn-success{
+	background-color:#4ab69c !important;
+}
+.bg-forth{
+	background-color: #8d4cba !important;
+}
+.bg-fifth{
+	background-color:#723d93 !important;
+}
+.card-header.bg-primary{
+	background-color: #285daf !important;
+}
+.btn-primary{
+	background-color: #285daf !important;
+	color:#fff;
+}
+.btn-outline-primary{
+	border: 2px solid #285daf !important;
+	color: #285daf !important;
+}
+.btn-outline-primary:hover{
+	border: 2px solid #285daf !important;
+	background-color: #285daf !important;
+	color:#fff !important;
+}
+.page-item.active .page-link{
+	background-color: #285daf !important;
+	color:#fff;
+}
+.page-item .page-link{
+	color: #285daf;
+	border: 1px solid #285daf !important;
+}
+.main-menu.menu-light .navigation li a{
+	color: #285daf;
+	font-weight:500;
+}
+.logo{
+	height:150px
+}
+.nav-pills .nav-link.active{
+	color: #fff;
+    background-color: #285daf ;
+}
+/* .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+    color: #285daf;
+    background-color: #fff;
+    border-bottom: 2px solid #285daf;
+	border-color: #fff;
+}
+.nav-tabs .nav-link a{
+	color: #000;
+} */
+  .nav-tabs .nav-link.active {
+        color: #285daf;
+        background-color: #fff;
+        border-color: none;
+      border-bottom: 2px solid #285daf;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+    }
