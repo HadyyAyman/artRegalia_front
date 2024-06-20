@@ -1,5 +1,6 @@
 <?php require_once("functions/connection.php");
 include("functions/products_functions.php");
+include("functions/cart_function.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">
