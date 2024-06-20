@@ -5,7 +5,7 @@
             <div class="navbar-header expanded d-flex justify-content-center align-items-center">
             <ul class="nav navbar-nav flex-row">
                 <li class="nav-item mobile-menu d-lg-none mr-auto"><a class="nav-link nav-menu-main menu-toggle hidden-xs is-active" href="#"><i class="ft-menu font-large-1"></i></a></li>
-                <li class="nav-item mr-auto"><a class="navbar-brand" href="index.html">
+                <li class="nav-item mr-auto"><a class="navbar-brand" href="dashboard.php">
                     <!-- <img class="brand-logo" alt="modern admin logo" src="../images/logo/logo.png"> -->
                     <h3 class="brand-text">Artisan Dashboard</h3></a></li>
                 <li class="nav-item d-lg-none"><a class="nav-link open-navbar-container" data-toggle="collapse" data-target="#navbar-mobile"><i class="fa fa-ellipsis-v"></i></a></li>
