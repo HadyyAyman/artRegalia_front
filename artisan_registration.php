@@ -78,7 +78,7 @@ include("functions/authentication_function.php");
           <span></span>
           <span></span>
         </input>
-        <p class="message">Already registered? <a href="login.html">Sign In</a></p>
+        <p class="message">Already registered? <a href="login.php">Sign In</a></p>
       </form>
     </div>
   </main>

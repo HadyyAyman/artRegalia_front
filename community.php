@@ -43,14 +43,14 @@ include("includes/header.php");
         $post_wishlist_query = mysqli_query($conn, $posts_statement) or die('users_error' . mysqli_error());
 
         while ($result = mysqli_fetch_array($post_wishlist_query)) {
-
+          $description = substr($result['description'], 0, 130);
 
 
 
         ?>
             <div class="col-lg-6 px-0">
               <h1 class="display-4 fst-italic"><?php echo $result['name'] ?></h1>
-              <p class="lead my-3"><?php echo $result['description'] ?></p>
+              <p class="lead my-3"><?php echo $description ?></p>
               <p class="lead mb-0">
                 <a href="post_details.php?post_id=<?php echo $result['id'] ?>" class="btn btn-primary com-btn">Continue reading
                   <i class="fa-solid fa-chevron-right"></i>
@@ -58,26 +58,9 @@ include("includes/header.php");
               </p>
             </div>
         <?php } ?>
-        <!-- <div class="carousel-item">
-          <div class="col-lg-6 px-0">
-            <h1 class="display-4 fst-italic">Another featured blog post</h1>
-            <p class="lead my-3">This is some additional paragraph placeholder content to keep the demo flowing.</p>
-            <p class="lead mb-0">
-              <button class="btn btn-primary com-btn">Continue reading
-                <i class="fa-solid fa-chevron-right"></i>
-              </button>
-            </p>
-          </div>
-        </div> -->
+        
       </div>
-      <!-- <button class="carousel-control-prev post-carousel-control-prev" type="button" data-bs-target="#featuredCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next post-carousel-control-next" type="button" data-bs-target="#featuredCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button> -->
+      
     </div>
 
     <!-- SEARCH BAR -->
@@ -112,7 +95,7 @@ include("includes/header.php");
         $post_wishlist_query = mysqli_query($conn, $posts_statement) or die('users_error' . mysqli_error($conn));
 
         while ($result = mysqli_fetch_array($post_wishlist_query)) {
-
+          $description = substr($result['description'], 0, 100);
 
 
 
@@ -124,7 +107,7 @@ include("includes/header.php");
               <div class="col-md-7">
                 <h3 class="mb-0"><?php echo $result['name'] ?></h3>
                 <div class="mb-1 text-body-secondary"><?php echo $result['created_at'] ?></div>
-                <p class="card-text mb-auto"><?php echo $result['description'] ?></p>
+                <p class="card-text mb-auto"><?php echo $description ?></p>
                 <a href="">
                   <a href="post_details.php?post_id=<?php echo $result['id'] ?>" class="btn btn-primary com-btn">Continue reading
                     <i class="fa-solid fa-chevron-right"></i>
@@ -196,7 +179,7 @@ include("includes/footer.php");
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- <script src="./javascript/sp.js" charset="UTF-8"></script> -->
+
 
 </body>
 

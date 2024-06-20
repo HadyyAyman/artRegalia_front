@@ -41,8 +41,10 @@ include("functions/cart_function.php");
                     <div class="card ss-card">
                         <img src="./images/<?php echo $result_artisan_details['image'] ?>" class="card-img-top rounded-circle" alt="Shop Image" style="width: 140px; height: 140px; margin: 20px auto 0;">
                         <div class="card-body text-center">
-                            <h2 class="card-title">Name: <?php echo $result_artisan_details['name'] ?></h2>
-                            <h4 class="card-title">Brand Name: <?php echo $result_artisan_details['brand_name'] ?></h4>
+                            <!-- <h2 class="card-title" style="font-size:16px;">Name: <?php //echo $result_artisan_details['name'] ?></h2> -->
+                            <h4 class="card-title"><?php echo $result_artisan_details['brand_name'] ?></h4>
+                            <a href="<?php echo $result_artisan_details['facebook_link'] ?>"><i class="fa-brands fa-facebook-f" style="margin-right:10px; font-size:18px;"></i></a>
+                            <a href="<?php echo $result_artisan_details['linkedin_link'] ?>"><i class="fa-brands fa-linkedin" style=" font-size:18px;"></i></a>
                             <!-- <p class="text-muted">Rating: ★★★★☆</p> -->
                             <!-- <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
                         </div>
@@ -62,6 +64,7 @@ include("functions/cart_function.php");
                     </div>
                 <?php } ?>
             </div>
+            <h1>Products <hr> </h1>
             <div class="product-container col-12 col-md-8">
 
                 <?php
@@ -72,6 +75,7 @@ include("functions/cart_function.php");
 
 
                 ?>
+                
                     <div class="product">
                         <figure class="">
                             <img src="images/<?php echo  $result['image'] ?>" alt="T-Shirt Raplh Lauren" class="product-image img-fluid">

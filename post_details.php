@@ -212,7 +212,7 @@ if (isset($_GET['post_id'])) {
       <div class="col-md-6" style="width: 60%;">
 
         <article class="blog-post">
-        <img src="images/<?= $result_post_details['image'] ?>" />
+        <img class="img-responsive" src="images/<?= $result_post_details['image'] ?>" />
 
           <h2 class="display-5 link-body-emphasis mb-1"><?= $result_post_details['name'] ?></h2>
           <p class="blog-post-meta"><?= $result_post_details['created_at'] ?> 
@@ -272,7 +272,7 @@ if (isset($_GET['post_id'])) {
               <li><a href="https://www.twitter.com" target="_blank" class="posts_social_links"><i
                     class="fa-brands fa-x-twitter social_links_icon"></i></a></li>
               <li><a href="https://www.facebook.com" target="_blank" class="posts_social_links"><i
-                    class="fa-brands fa-facebook social_links_icon"></i></a></li>
+                    class="fa-brands fa-facebook-f social_links_icon"></i></a></li>
             </ol>
           </div>
         </div>
@@ -280,7 +280,7 @@ if (isset($_GET['post_id'])) {
 
     </div>
 
-    <section class="content-item" id="comments">
+    <!-- <section class="content-item" id="comments">
       <div class="container">
         <div class="row">
           <div class="col-sm-8">
@@ -299,10 +299,10 @@ if (isset($_GET['post_id'])) {
               </fieldset>
             </form>
 
-            <h3>4 Comments</h3>
+            <h3>4 Comments</h3> -->
 
             <!-- COMMENT 1 - START -->
-            <div class="media">
+            <!-- <div class="media">
               <a class="pull-left" href="#"><img class="media-object"
                   src="https://bootdey.com/img/Content/avatar/avatar1.png" alt=""></a>
               <div class="media-body">
@@ -320,12 +320,12 @@ if (isset($_GET['post_id'])) {
                       style="text-decoration: none; color:var(--color9); font-weight: 600;">Reply</a></li>
                 </ul>
               </div>
-            </div>
+            </div> -->
             <!-- COMMENT 1 - END -->
-          </div>
+          <!-- </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
   </main>
 

@@ -35,16 +35,17 @@ require_once("functions/connection.php");
   <!-- split landing page -->
   <!-- =============================== -->
   <div class="split-landing">
-    <div class="split left">
-      <img src="./images/craftart.jpg" alt="">
-      <h1 class="craftart">Craftsmen</h1>
-      <a href="craft-page.html" class="show-btn">Show</a>
+
+  <div class="split right">
+    <img src="./images/artist.jpg" alt="" class="home_image">
+    <h1 class="craftart">Step into the World of <span class="artregalia">ArtRegalia</span></h1>
+    <p class="home_phrase">Craft Your Space with Timeless Elegance - Discover Unique <span class="artregalia">Artisan</span> Creations Today!</p>
+    <div class="home_btns">
+    <a href="shopall.php" class="show-btn">Shop now</a>
+    <a href="artisan_registration.php" class="show_btn2">Become an Artisan</a>
     </div>
-    <div class="split right">
-    <img src="./images/artist.jpg" alt="">
-      <h1 class="craftart">Artists</h1>
-      <a href="Artists-page.html" class="show-btn">Show</a>
-    </div>
+  </div>
+</div>
 
     <!-- scroll animation -->
     <div class="scroll-container">
@@ -74,7 +75,7 @@ require_once("functions/connection.php");
           <div class="grid-item">
             <i class="ri-shield-star-fill"></i>
             <h3> Problem</h3>
-            <p>1. Quality Consistency: Handcrafted items may vary in quality due to the human element involved in the
+            <p>Quality Consistency: Handcrafted items may vary in quality due to the human element involved in the
               production process, leading to inconsistencies between individual pieces.
             </p>
           </div>
@@ -82,7 +83,7 @@ require_once("functions/connection.php");
           <div class="grid-item">
             <i class="ri-price-tag-fill"></i>
             <h3>Problem</h3>
-            <p>2. Price: Handcrafted products tend to be priced higher than mass-produced alternatives due to the time,
+            <p>Price: Handcrafted products tend to be priced higher than mass-produced alternatives due to the time,
               skill, and effort required for their creation.
             </p>
           </div>
@@ -90,14 +91,14 @@ require_once("functions/connection.php");
           <div class="grid-item">
             <i class="ri-settings-3-fill"></i>
             <h3>Problem</h3>
-            <p>3. Availability and Customization:
+            <p>Availability and Customization:
               Handcrafted items may have limited availability, and customization options could be restricted compared to
               mass-produced goods, leading to fewer choices for consumers.</p>
           </div>
 
           <div class="grid-item">
             <h3>Solution</h3>
-            <p>1. Quality Assurance Program: Establish a robust quality assurance initiative, guiding artisans to
+            <p>Quality Assurance Program: Establish a robust quality assurance initiative, guiding artisans to
               maintain
               consistent standards in their craft. Offer training and resources to refine skills and uphold quality
               benchmarks, while displaying visible certifications on product listings to reassure customers of
@@ -107,7 +108,7 @@ require_once("functions/connection.php");
 
           <div class="grid-item">
             <h3>Solution</h3>
-            <p>2. Value-Added Services: Introduce premium services like professional photography and marketing aid to
+            <p>Value-Added Services: Introduce premium services like professional photography and marketing aid to
               elevate artisans' products.Provide pricing guidance for fair yet competitive rates and
               create promotional opportunities such as
               featured artist showcases to attract wider attention.
@@ -117,7 +118,7 @@ require_once("functions/connection.php");
           <div class="grid-item">
             <!-- <i class="fa-solid fa-exclamation"></i> -->
             <h3>Solution</h3>
-            <p>3. Customization Platform: Develop an intuitive platform facilitating direct communication between
+            <p>Customization Platform: Develop an intuitive platform facilitating direct communication between
               customers and
               artisans for tailored creations. Implement communication tools like messaging and video calls to
               streamline

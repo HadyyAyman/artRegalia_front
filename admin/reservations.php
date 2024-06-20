@@ -71,9 +71,9 @@
                                         <thead>
                                             <tr>
                                                 <th>#</th>
-                                                <th>name</th>
-                                                <th>username</th>
-                                                <th>Full name</th>
+                                                <th>Material</th>
+                                                <th>Full Name</th>
+                                                <th>Username</th>
                                                 <th>User Status</th>
                                                 <th>Artisan Status</th>
                                                 <th>Image</th>
@@ -133,9 +133,9 @@
                                         <tfoot>
                                             <tr>
                                                 <th>#</th>
-                                                <th>name</th>
-                                                <th>username</th>
-                                                <th>Full name</th>
+                                                <th>Material</th>
+                                                <th>Full Name</th>
+                                                <th>Username</th>
                                                 <th>User Status</th>
                                                 <th>Artisan Status</th>
                                                 <th>Image</th>

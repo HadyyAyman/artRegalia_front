@@ -47,7 +47,7 @@ include("functions/products_functions.php");
       
 
       <!-- Shops Grid -->
-      <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="product-container col-12 col-md-8">
         <!-- Shop Card -->
         <?php
                 $products = "SELECT * from `products` WHERE category_id = " . $_GET['category_id'] . "";
@@ -57,18 +57,62 @@ include("functions/products_functions.php");
 
 
                 ?>
-        <div class="col-md-4">
-          <div class="card shop-card">
-            <div class="card-body text-center">
-              <div class="mb-3">
-                <img src="./images/<?php echo $result['image'] ?>" class="rounded-circle" alt="Product Image" width="140" height="140">
-              </div>
-              <h5 class="card-title dark shop-title"><?php echo $result['name'] ?></h5>
-              <p class="card-text shop-text"><?php echo $result['descreption'] ?></p>
-              <a href="product-details.php?product_id=<?php echo $result['id'] ?>" class="btn btn-primary shop-btn">Visit product</a>
-            </div>
-          </div>
-        </div>
+        <div class="product">
+                        <figure class="">
+                            <img src="images/<?php echo  $result['image'] ?>" alt="T-Shirt Raplh Lauren" class="product-image img-fluid">
+                        </figure>
+
+                        <div class="product-description  ">
+
+                            <div class="info ">
+                                <h1><?php echo $result['name'] ?></h1>
+                                <p>
+                                    <?php echo $result['descreption'] ?>
+                                </p>
+                            </div>
+
+                            <div class="price  d-flex align-items-start">
+                                <?php echo $result['price'] ?>
+                            </div>
+                        </div>
+
+                        <div class="product-sidebar">
+                            <?php if (isset($_SESSION['user_id'])) { ?>
+                                <form method="POST" class="border-0">
+                                    <input type="hidden" name="product_id" value="<?php echo $result['id'] ?>">
+                                    <input type="hidden" name="quantity" value="1">
+                                    <button type="submit" name="add_to_cart" class="buy">
+                                        <i class="fa-solid fa-shopping-bag"></i>
+                                        <span>ADD TO BAG</span>
+                                    </button>
+                                </form>
+                                <form method="POST" class="border-0">
+                                    <input type="hidden" name="product_id" value="<?php echo $result['id'] ?>">
+                                    <input type="hidden" name="quantity" value="1">
+                                    <button type="submit" name="add_to_wishlist" class="Wishlist">
+                                        <i class="fa-solid fa-heart"></i>
+                                        <span>Wishlist</span>
+                                    </button>
+                                </form>
+                            <?php } else { ?>
+                                <button onclick="window.location.href = 'http://localhost/artRegalia_front/login.php'" class="buy">
+                                    <i class="fa-solid fa-shopping-bag"></i>
+                                    <span>ADD TO BAG</span>
+                                </button>
+                                <button type="button" onclick="window.location.href = 'http://localhost/artRegalia_front/login.php'" class="Wishlist">
+                                    <i class="fa-solid fa-heart"></i>
+                                    <span>Wishlist</span>
+                                </button>
+                            <?php } ?>
+                            <a href="product-details.php?product_id=<?php echo $result['id'] ?>">
+                                <button class="info">
+                                    <i class="fa-solid fa-info"></i>
+                                    <span>MORE INFO</span>
+                                </button>
+                            </a>
+
+                        </div>
+                    </div>
           <?php }?>
         <!-- More cards can be added similarly -->
       </div>

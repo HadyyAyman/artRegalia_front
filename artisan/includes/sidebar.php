@@ -60,6 +60,17 @@
                     </div>
                 </a>
             </li>
+
+            <li class="nav-item">
+                
+                <a href="../index.php">
+                    <div class="row no-gutters justify-content-between align-items-center">
+
+                        <span class="menu-title" data-i18n="">Website</span>
+                        <i class="fa fa-angle-right"></i>
+                    </div>
+                </a>
+            </li>
         </ul>
         </div>
     </div>
