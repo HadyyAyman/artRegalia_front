@@ -74,7 +74,7 @@ require_once("functions/connection.php");
 
           <div class="grid-item">
             <i class="ri-shield-star-fill"></i>
-            <h3> Problem</h3>
+            <h3>Quality </h3>
             <p>Quality Consistency: Handcrafted items may vary in quality due to the human element involved in the
               production process, leading to inconsistencies between individual pieces.
             </p>
@@ -82,7 +82,7 @@ require_once("functions/connection.php");
 
           <div class="grid-item">
             <i class="ri-price-tag-fill"></i>
-            <h3>Problem</h3>
+            <h3>Price </h3>
             <p>Price: Handcrafted products tend to be priced higher than mass-produced alternatives due to the time,
               skill, and effort required for their creation.
             </p>
@@ -90,7 +90,7 @@ require_once("functions/connection.php");
 
           <div class="grid-item">
             <i class="ri-settings-3-fill"></i>
-            <h3>Problem</h3>
+            <h3>Availability </h3>
             <p>Availability and Customization:
               Handcrafted items may have limited availability, and customization options could be restricted compared to
               mass-produced goods, leading to fewer choices for consumers.</p>

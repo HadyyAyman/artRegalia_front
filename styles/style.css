@@ -3818,10 +3818,11 @@ body {
   }
 
   .com-btn:hover {
-    background: var(--color5);
-    color: var(--color9);
+    background: var(--color9);
+    color: var(--color2);
     font-weight: 700;
     border: 1px dashed var(--color9);
+    box-shadow: 0 0 5px rgba(0, 0, 0, .2);
   }
 
   text {
@@ -3901,9 +3902,9 @@ body {
   }
 
   .blog-btn:hover {
-    background-color: var(--color4) !important;
-    border-color: var(--color8) !important;
-    color: var(--color9) !important;
+    background-color: var(--color9) !important;
+    border-color: var(--color9) !important;
+    color: var(--color2) !important;
     font-weight: 700;
   }
 

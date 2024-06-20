@@ -153,7 +153,7 @@ include("includes/header.php");
                 stories, videos, and images.
               </p>
               <div class="mbr-section-btn mt-4">
-                <a class="btn btn-primary blog-btn display-7" href="#">Start Writing Now</a>
+                <a class="btn btn-primary blog-btn display-7" href="artisan_registration.php">Learn More</a>
               </div>
             </div>
           </div>
