@@ -17,11 +17,12 @@
                 <ul class="nav navbar-nav ">
                 
                 
-                    <li class="dropdown dropdown-user nav-item"><a class="dropdown-toggle nav-link dropdown-user-link" href="#" data-toggle="dropdown"><span class="mr-1 mb-0 user-name text-bold-700"><?php echo $_SESSION['name']; ?></span></a>
+                    <li class="dropdown dropdown-user nav-item"><a class="dropdown-toggle nav-link dropdown-user-link" href="#" data-toggle="dropdown"><span class="mr-1 mb-0 user-name text-bold-700"><?php echo $_SESSION['name'] ?></span></a>
                         <div class="dropdown-menu dropdown-menu-right">                        
                             <a class="dropdown-item" href="logout.php"><i class="ft-power"></i> Logout</a>
                         </div>
                     </li>
+
                 </ul>
             </div>
             </div>

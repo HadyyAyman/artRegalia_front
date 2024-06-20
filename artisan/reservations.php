@@ -15,7 +15,7 @@
   <meta name="description" content="Modern admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities with bitcoin dashboard.">
   <meta name="keywords" content="admin template, modern admin template, dashboard template, flat admin template, responsive admin template, web app, crypto dashboard, bitcoin dashboard">
   <meta name="author" content="PIXINVENT">
-  <title>Admin Dashboard - Reservations
+  <title>Artisan Dashboard - Reservations
   </title>
   <link rel="apple-touch-icon" href="app-assets/images/ico/apple-icon-120.png">
   <link rel="shortcut icon" type="image/x-icon" href="app-assets/images/ico/favicon.ico">
@@ -72,9 +72,9 @@
                                         <thead>
                                             <tr>
                                                 <th>#</th>
-                                                <th>name</th>
-                                                <th>username</th>
-                                                <th>Full name</th>
+                                                <th>Material</th>
+                                                <th>Full Name</th>
+                                                <th>Username</th>
                                                 <th>User Status</th>
                                                 <th>Artisan Status</th>
                                                 <th>Image</th>
@@ -178,9 +178,9 @@
                                         <tfoot>
                                             <tr>
                                                 <th>#</th>
-                                                <th>name</th>
-                                                <th>username</th>
-                                                <th>Full name</th>
+                                                <th>Material</th>
+                                                <th>Full Name</th>
+                                                <th>Username</th>
                                                 <th>User Status</th>
                                                 <th>Artisan Status</th>
                                                 <th>Image</th>

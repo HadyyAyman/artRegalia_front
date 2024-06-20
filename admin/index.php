@@ -60,7 +60,7 @@
                     <form class="form-horizontal" action="" method="POST">
                       <fieldset class="form-group floating-label-form-group">
                         <label for="username">Your Email</label>
-                        <input type="text" class="form-control" id="email" name="email" placeholder="Your Username">
+                        <input type="text" class="form-control" id="email" name="email" placeholder="Your Email">
                       </fieldset>
                       <fieldset class="form-group floating-label-form-group mb-1">
                         <label for="password">Enter Password</label>

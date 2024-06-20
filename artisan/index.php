@@ -10,7 +10,7 @@
   <meta name="description" content="Modern admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities with bitcoin dashboard.">
   <meta name="keywords" content="admin template, modern admin template, dashboard template, flat admin template, responsive admin template, web app, crypto dashboard, bitcoin dashboard">
   <meta name="author" content="PIXINVENT">
-  <title>Arist Dashboard | Login
+  <title>Artisan Dashboard | Login
   </title>
   <link rel="apple-touch-icon" href="app-assets/images/ico/apple-icon-120.png">
   <link rel="shortcut icon" type="image/x-icon" href="app-assets/images/ico/favicon.ico">
@@ -93,11 +93,11 @@
                                         <form action="" method="post">
                                             <div class="form-group">
                                                 <label for="email">Email</label>
-                                                <input type="email" name="email" class="form-control" required>
+                                                <input type="email" name="email" class="form-control" placeholder="Your Email" required>
                                             </div>
                                             <div class="form-group">
                                                 <label for="password">Passowrd</label>
-                                                <input type="password" name="login_password" class="form-control" required>
+                                                <input type="password" name="login_password" class="form-control" placeholder="Password" required>
                                             </div>
                                             <button name="loginsubmit" type="submit" class="btn btn-success btn-block">Log in</button>
                                         </form>

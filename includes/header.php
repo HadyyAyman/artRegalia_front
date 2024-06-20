@@ -32,9 +32,9 @@
 
 
         <li class="navbar-item nav-item">
-          <a href="#" class="navbar-links desk nav-link">Artists</a>
+          <a href="#" class="navbar-links desk nav-link">Artisans</a>
           <input type="checkbox" id="showArtists" class="dropdown-toggle">
-          <label for="showArtists" class="navbar-links">Artists <i class="fa-solid fa-caret-down"></i></label>
+          <label for="showArtists" class="navbar-links">Artisans <i class="fa-solid fa-caret-down"></i></label>
           <ul class="drop-menu">
 
 
@@ -43,13 +43,10 @@
             $artisan_query = mysqli_query($conn, $artisans_statement) or die("Error in selecting data" . mysqli_error($conn));
             while ($result = mysqli_fetch_array($artisan_query)) {
             ?>
-              <li><a class='dropdown-item' href='artisan_profile.php?artisan_id=<?php echo $result['id'] ?>'><?php echo $result['name'] ?></a></li>
+              <li><a class='dropdown-item' href='artisan_profile.php?artisan_id=<?php echo $result['id'] ?>'><?php echo $result['brand_name'] ?></a></li>
             <?php
             }
             ?>
-            <!-- <li><a class='dropdown-item' href='#'>Street Artist</a></li>
-              <li><a class='dropdown-item' href='#'>Street Artist</a></li>
-              <li><a class='dropdown-item' href='#'>Street Artist</a></li> -->
 
           </ul>
         </li>
@@ -69,58 +66,10 @@
             <?php
             }
             ?>
-            <!-- <li><a class='dropdown-item' href='#'>Street Artist</a></li>
-              <li><a class='dropdown-item' href='#'>Street Artist</a></li>
-              <li><a class='dropdown-item' href='#'>Street Artist</a></li> -->
 
           </ul>
         </li>
-        <!-- <li class="navbar-item nav-item">
-            <a href="craft-page.html" class="navbar-links desk nav-link">Craftsmen</a>
-            <input type="checkbox" id="showMega" class="dropdown-toggle">
-            <label for="showMega" class="navbar-links">Craftsmen<i class="fa-solid fa-caret-down"></i></label>
-            <div class="mega-box">
-              <div class="content">
-
-                <div class="row">
-                  <a href="#">
-                    <header>bags</header>
-                  </a>
-                  <ul class="mega-links">
-                    <li><a class="dropdown-item" href="#">beaded</a></li>
-                    <li><a class="dropdown-item" href="#">beaded</a></li>
-                    <li><a class="dropdown-item" href="#">beaded</a></li>
-                    <li><a class="dropdown-item" href="#">beaded</a></li>
-                  </ul>
-                </div>
-
-                <div class="row">
-                  <a href="#">
-                    <header>bags</header>
-                  </a>
-                  <ul class="mega-links">
-                    <li><a class="dropdown-item" href="#">beaded</a></li>
-                    <li><a class="dropdown-item" href="#">beaded</a></li>
-                    <li><a class="dropdown-item" href="#">beaded</a></li>
-                    <li><a class="dropdown-item" href="#">beaded</a></li>
-                  </ul>
-                </div>
-
-                <div class="row">
-                  <a href="#">
-                    <header>bags</header>
-                  </a>
-                  <ul class="mega-links">
-                    <li><a class="dropdown-item" href="#">beaded</a></li>
-                    <li><a class="dropdown-item" href="#">beaded</a></li>
-                    <li><a class="dropdown-item" href="#">beaded</a></li>
-                    <li><a class="dropdown-item" href="#">beaded</a></li>
-                  </ul>
-                </div>
-
-              </div>
-            </div>
-          </li> -->
+        
 
         <li class="navbar-item nav-item">
           <a href="shopall.php" class="navbar-links nav-link">Shop all</a>
@@ -143,25 +92,6 @@
 
 
       <ul class="nav-action-list navbar-nav me-2">
-
-        <!-- <li class="nav-item">
-
-            <button class="nav-action-btn srch-btn nav-link btn btn-link" id="searchButton">
-              <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
-              <span class="nav-action-text">Search</span>
-            </button>
-          </li>
-
-
-          <li class="nav-item ms-2">
-            <button class="nav-action-btn notify-btn nav-link btn btn-link ">
-              <i class="fa-solid fa-inbox" aria-hidden="true"></i>
-              <span class="icon-badge-btn">10</span>
-              <span class="nav-action-text">Notifications</span>
-
-              <data class="nav-action-badge-notify" value="12" aria-hidden="true">12</data>
-            </button>
-          </li> -->
 
         <li class="nav-item ms-2">
           <?php if (isset($_SESSION['user_id'])){
@@ -192,7 +122,7 @@
             </a>
           <?php }else{
             ?>
-<a href="cart.php" class="nav-action-btn nav-link">
+              <a href="cart.php" class="nav-action-btn nav-link">
               <i class="fa-solid fa-bag-shopping" aria-hidden="true"></i>
               <span class="icon-badge-btn">0</span>
               <data class="nav-action-text" value="400.00">Basket: <strong>400EGP</strong></data>
@@ -220,7 +150,7 @@
             <input type="checkbox" id="showProfile" class="dropdown-toggle">
             <label for="showProfile" class="navbar-links"><i class="fa-solid fa-user" aria-hidden="true"></i>Profile <i class="fa-solid fa-caret-down"></i></label>
             <ul class="drop-menu profile">
-              <li><a class="nav-link" href="./profile.php"><i class="fa-solid fa-user"></i>view profile</a></li>
+              <li><a class="nav-link" href="./profile.php"><i class="fa-solid fa-user"></i>View Profile</a></li>
               <li><a class="nav-link" href="./wishlist.php"><i class="fa-solid fa-heart"></i>Wishlist</a></li>
               <!-- <li><a class="nav-link" href="settings.html"><i class="fa-solid fa-gears"></i>Settings</a></li> -->
 
