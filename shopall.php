@@ -89,7 +89,7 @@ include("functions/cart_function.php")
           $product_query = mysqli_query($conn, $products) or die('users_error' . mysqli_error());
 
           while ($result = mysqli_fetch_array($product_query)) {
-
+          $descreption =  substr($result['descreption'],0,100); 
 
           ?>
             <div class="product">
@@ -102,7 +102,7 @@ include("functions/cart_function.php")
                 <div class="info ">
                   <h1><?php echo $result['name'] ?></h1>
                   <p>
-                    <?php echo $result['descreption'] ?>
+                    <?php echo $descreption ?>
                   </p>
                 </div>
 
@@ -130,11 +130,11 @@ include("functions/cart_function.php")
                     </button>
                   </form>
                 <?php } else { ?>
-                  <button onclick="window.location.href = 'http://localhost/artRegalia_front/login.php'" class="buy">
+                  <button onclick="window.location.href = 'http://localhost/AR/login.php'" class="buy">
                     <i class="fa-solid fa-shopping-bag"></i>
                     <span>ADD TO BAG</span>
                   </button>
-                  <button type="button" onclick="window.location.href = 'http://localhost/artRegalia_front/login.php'" class="Wishlist">
+                  <button type="button" onclick="window.location.href = 'http://localhost/AR/login.php'" class="Wishlist">
                     <i class="fa-solid fa-heart"></i>
                     <span>Wishlist</span>
                   </button>

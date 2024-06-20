@@ -95,7 +95,7 @@ include("includes/header.php");
         $post_wishlist_query = mysqli_query($conn, $posts_statement) or die('users_error' . mysqli_error($conn));
 
         while ($result = mysqli_fetch_array($post_wishlist_query)) {
-          $description = substr($result['description'], 0, 100);
+          $description = substr($result['description'], 0, 80);
 
 
 
