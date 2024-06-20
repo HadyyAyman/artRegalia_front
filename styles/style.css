@@ -319,7 +319,7 @@ body {
   .navbar-list .drop-menu {
     position: absolute;
     background: var(--color1);
-    width: 180px;
+    width: 200px;
     line-height: 45px;
     top: 85px;
     opacity: 0;
@@ -327,6 +327,10 @@ body {
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
     white-space: nowrap;
     z-index: 1;
+    height: 200px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 0;
   }
 
 
