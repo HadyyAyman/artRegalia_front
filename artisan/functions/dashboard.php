@@ -3,7 +3,7 @@ $users = "SELECT `id` FROM `users` ORDER BY `id`";
 $users_count = mysqli_query($conn,$users) or die("Error:".mysqli_error($conn)) ;
 $userId = mysqli_num_rows($users_count);
 // 
-$products = "SELECT `id` FROM `products` ORDER BY id";
+$products = "SELECT `id` FROM `products` WHERE artisan_id = ".$_SESSION['artisan_id']." ORDER BY id";
 $products_count = mysqli_query($conn,$products) or die("Error:".mysqli_error($conn)) ;
 $productsId = mysqli_num_rows($products_count);
 // 

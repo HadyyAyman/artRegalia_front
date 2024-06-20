@@ -46,16 +46,7 @@ if (isset($_POST['add_to_cart'])) {
         }
     }
 }
-if (isset($_GET['category_id'])) {
-    $sql_select = "SELECT * FROM `category` where `catid`=" . $_GET['category_id'] . " ";
-    $category_id = $_GET['category_id'];
-    $select_query = mysqli_query($conn, $sql_select) or die('ERROR in details' . mysqli_error());
-    if (!$select_query) {
-        die('ERROR in details' . mysqli_error($conn));
-    } else {
-        $result_details = mysqli_fetch_array($select_query);
-    }
-}
+
 if(isset($_POST["add_to_wishlist"])){
     $product_id =  $_POST['product_id'];
     $products_statement = "SELECT * FROM `wishlist` where `product_id`='$product_id'";
