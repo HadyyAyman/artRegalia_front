@@ -143,7 +143,7 @@ CREATE TABLE `feedback` (
 
 INSERT INTO `feedback` (`id`, `user_id`, `order_id`, `name`, `phone`, `email`, `recommend`, `share_feedback`, `rate`, `message`) VALUES
 (1, 1, 1, 'hady ayman', '', 'hadyayman955@gmail.com', 'Yes', 'Yes', 1, 'hjfghdyihjhfyy'),
-(2, 1, 1, 'israa belgik', '', 'salma@gmail.com', 'Yes', 'Yes', 3, ':\'\r\nlplp[k'');
+(2, 1, 1, 'israa belgik', '', 'salma@gmail.com', 'Yes', 'Yes', 3, ':\'\r\nlplp[k');
 
 -- --------------------------------------------------------
 
