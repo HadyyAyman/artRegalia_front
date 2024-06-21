@@ -221,13 +221,13 @@ include('functions/products_function.php');
                             <div class="col-12">
                                 <div class="form-group">
                                     <label for="name">Name</label>
-                                    <input id="name" class="form-control" type="text" name="name" required>
+                                    <input id="name" class="form-control" type="text" name="name" placeholder="Name of the product ex:Leather Bag" required>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-group">
                                     <label for="price">Price</label>
-                                    <input id="price" class="form-control" type="number" name="price" required>
+                                    <input id="price" class="form-control" type="number" name="price" placeholder="Set Price" required>
                                 </div>
                             </div>
                             <div class="col-12">
@@ -259,7 +259,7 @@ include('functions/products_function.php');
                             <div class="col-12">
                                 <div class="form-group">
                                     <label for="descreption">descreption</label>
-                                    <textarea id="descreption" class="form-control" name="descreption" required>Enter description</textarea>
+                                    <textarea id="descreption" class="form-control" name="descreption" placeholder="Enter description" required></textarea>
                                 </div>
                             </div>
                         </div>
