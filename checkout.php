@@ -27,7 +27,7 @@ include("functions/cart_function.php");
       <section class="header-section">
         <div class="nav-left">
           <div class="logo">
-            <a href="./index.html">
+            <a href="./index.php">
               <div>
                 ArtRegalia
               </div>

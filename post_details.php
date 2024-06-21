@@ -227,9 +227,7 @@ if (isset($_GET['post_id'])) {
         <div class="position-sticky">
           <div class="p-4 mb-3 bg-body-tertiary rounded">
             <h4 class="fst-italic">About</h4>
-            <p class="mb-0">Customize this section to tell your visitors a little bit about your publication,
-              writers,
-              content, or something else entirely. Totally up to you.</p>
+            <p class="mb-0">Welcome to ArtRegalia, your premier destination for exquisite artisan creations. Our e-commerce platform is dedicated to showcasing the finest handcrafted products, blending traditional craftsmanship with modern aesthetics. </p>
           </div>
 
           <div>

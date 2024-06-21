@@ -733,12 +733,14 @@ body {
     width: 100%;
     margin: 0 auto;
     overflow: hidden;
+    padding-top: 90px;
   }
 
   .carousel__image {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    opacity: .9;
   }
 
   .carousel__track-container {
@@ -765,7 +767,7 @@ body {
 
   .carousel__slide h1 {
     position: absolute;
-    bottom: 50%;
+    bottom: 45%;
     left: 50%;
     transform: translate(-50%);
     font-size: 3rem;
@@ -775,7 +777,7 @@ body {
 
   .carousel__slide p {
     position: absolute;
-    bottom: 10%;
+    bottom: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: start;

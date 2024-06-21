@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.1
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 20, 2024 at 05:32 PM
--- Server version: 10.4.28-MariaDB
--- PHP Version: 8.2.4
+-- Generation Time: Jun 20, 2024 at 10:42 PM
+-- Server version: 10.4.27-MariaDB
+-- PHP Version: 8.2.0
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -40,8 +40,8 @@ CREATE TABLE `admins` (
 
 INSERT INTO `admins` (`id`, `name`, `email`, `apassword`) VALUES
 (1, 'admin', 'admin@gmail.com', '123'),
-(2, 'Hady', 'hadyhossam@gmail.com', '123'),
-(3, 'Hady', 'hadyayman@gmail.com', '123');
+(2, 'Hady', 'Hadyayman955@gmail.com', 'Codilar0$'),
+(3, 'Hady Hossam', 'hadyhossam350@gmail.com', '123');
 
 -- --------------------------------------------------------
 
@@ -68,17 +68,17 @@ CREATE TABLE `artisans` (
 --
 
 INSERT INTO `artisans` (`id`, `name`, `brand_name`, `facebook_link`, `linkedin_link`, `email`, `image`, `phone`, `password`, `status`, `admin_id`) VALUES
-(1, 'Mohamed Salem', 'Macramé Elegance', 'https://facebook.com/mohamed', 'https://linkedin.com/in/mohamed', 'mohamed@gmail.com', '1718895877-42d9f5b9-917d-49d2-9178-1e5bf338ee0a.jpg', '1234567890', 123456789, 1, 1),
-(2, 'Heba Naguib', 'Beaded Chic', 'https://facebook.com/heba', 'https://linkedin.com/in/heba', 'heba@gmail.com', '1718896037-attachment_151036158.png', '2345678901', 123456789, 1, 1),
-(3, 'Ahmed El-Sayed', 'LeatherCraft', 'https://facebook.com/ahmed', 'https://linkedin.com/in/ahmed', 'ahmed_elsayed@gmail.com', '1718896167-download.png', '3456789012', 123456789, 1, 1),
-(4, 'Nourhan Fawzy', 'Chic Creations', 'https://facebook.com/nourhan', 'https://linkedin.com/in/nourhan', 'nourhan@gmail.com', '1718896284-download (1).png', '4567890123', 123456789, 1, 1),
-(5, 'Khaled Shoukry', 'HomeArt', 'https://facebook.com/khaled', 'https://linkedin.com/in/khaled', 'khaled@gmail.com', '1718895235-curved-seagrass-baskets-q.jpg', '5678901234', 123456789, 1, 1),
-(6, 'Yasmin Saeed', 'Textile Art', 'https://facebook.com/yasmin', 'https://linkedin.com/in/yasmin', 'yasmin@gmail.com', '1718896579-textile.jfif', '6789012345', 123456789, 1, 1),
-(7, 'Tamer Fouad', 'PotteryPro', 'https://facebook.com/tamer', 'https://linkedin.com/in/tamer', 'tamer@gmail.com', '1718896518-pottery.jfif', '7890123456', 123456789, 1, 1),
-(8, 'Mona Gamal', 'Woodcraft', 'https://facebook.com/mona', 'https://linkedin.com/in/mona', 'mona@gmail.com', '1718894953-s-l960 (1).webp', '8901234567', 123456789, 1, 1),
-(9, 'Hassan Kamel', 'Creativista', 'https://facebook.com/hassan', 'https://linkedin.com/in/hassan', 'hassan@gmail.com', '1718896767-painting.png', '9012345678', 123456789, 1, 1),
-(10, 'Layla Hamed', 'Artisoul', 'https://facebook.com/layla', 'https://linkedin.com/in/layla', 'layla@gmail.com', '1718896877-wood.png', '0123456789', 123456789, 1, 1),
-(11, 'Moataz Ragab', 'Handcrafted Elegance', 'https://facebook.com/moataz', 'https://linkedin.com/moataz', 'moataz@gmail.com', '1718896938-bracelet.jfif', '54687924581', 123456789, 1, 1);
+(1, 'Mohamed Salem', 'Macramé Elegance', 'https://facebook.com/mohamed', 'https://linkedin.com/in/mohamed', 'mohamed@gmail.com', '1718905172-1718895877-42d9f5b9-917d-49d2-9178-1e5bf338ee0a.jpg', '1234567890', 123456789, 1, 1),
+(2, 'Heba Naguib', 'Beaded Chic', 'https://facebook.com/heba', 'https://linkedin.com/in/heba', 'heba@gmail.com', '1718905184-1718896037-attachment_151036158.png', '2345678901', 123456789, 1, 1),
+(3, 'Ahmed El-Sayed', 'LeatherCraft', 'https://facebook.com/ahmed', 'https://linkedin.com/in/ahmed', 'ahmed_elsayed@gmail.com', '1718905441-1718896167-download.png', '3456789012', 123456789, 1, 1),
+(4, 'Nourhan Fawzy', 'Chic Creations', 'https://facebook.com/nourhan', 'https://linkedin.com/in/nourhan', 'nourhan@gmail.com', '1718905496-1718896284-download (1).png', '4567890123', 123456789, 1, 1),
+(5, 'Khaled Shoukry', 'HomeArt', 'https://facebook.com/khaled', 'https://linkedin.com/in/khaled', 'khaled@gmail.com', '1718905513-1718895235-curved-seagrass-baskets-q.jpg', '5678901234', 123456789, 1, 1),
+(6, 'Yasmin Saeed', 'Textile Art', 'https://facebook.com/yasmin', 'https://linkedin.com/in/yasmin', 'yasmin@gmail.com', '1718905530-1718896579-textile.jfif', '6789012345', 123456789, 1, 1),
+(7, 'Tamer Fouad', 'PotteryPro', 'https://facebook.com/tamer', 'https://linkedin.com/in/tamer', 'tamer@gmail.com', '1718905551-1718896518-pottery.jfif', '7890123456', 123456789, 1, 1),
+(8, 'Mona Gamal', 'Woodcraft', 'https://facebook.com/mona', 'https://linkedin.com/in/mona', 'mona@gmail.com', '1718905574-1718894953-s-l960 (1).webp', '8901234567', 123456789, 1, 1),
+(9, 'Hassan Kamel', 'UrbanArt', 'https://facebook.com/hassan', 'https://linkedin.com/in/hassan', 'hassan@gmail.com', '1718905584-1718896767-painting.png', '9012345678', 123456789, 1, 1),
+(10, 'Layla Hamed', 'DigitalArt', 'https://facebook.com/layla', 'https://linkedin.com/in/layla', 'layla@gmail.com', '1718905598-1718896877-wood.png', '0123456789', 123456789, 1, 1),
+(11, 'Moataz Ragab', 'Handcrafted Elegance', 'https://facebook.com/moataz', 'https://linkedin.com/moataz', 'moataz@gmail.com', '1718905613-1718896938-bracelet.jfif', '54687924581', 123456789, 1, 1);
 
 -- --------------------------------------------------------
 
@@ -134,8 +134,16 @@ CREATE TABLE `feedback` (
   `recommend` varchar(191) NOT NULL,
   `share_feedback` varchar(191) NOT NULL,
   `rate` int(11) NOT NULL,
-  `message` text NOT NULL
+  `message` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+
+--
+-- Dumping data for table `feedback`
+--
+
+INSERT INTO `feedback` (`id`, `user_id`, `order_id`, `name`, `phone`, `email`, `recommend`, `share_feedback`, `rate`, `message`) VALUES
+(1, 1, 1, 'hady ayman', '', 'hadyayman955@gmail.com', 'Yes', 'Yes', 1, 'hjfghdyihjhfyy'),
+(2, 1, 1, 'israa belgik', '', 'salma@gmail.com', 'Yes', 'Yes', 3, ':\'\r\nlplp[k');
 
 -- --------------------------------------------------------
 
@@ -149,7 +157,7 @@ CREATE TABLE `orders` (
   `notes` varchar(191) NOT NULL,
   `statues` varchar(191) NOT NULL,
   `address` varchar(255) NOT NULL,
-  `additional_info` text DEFAULT NULL,
+  `additional_info` varchar(50) DEFAULT NULL,
   `phone` varchar(191) NOT NULL,
   `created_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
   `total_price` int(191) NOT NULL,
@@ -157,6 +165,14 @@ CREATE TABLE `orders` (
   `admin_id` int(11) DEFAULT NULL,
   `visa` varchar(191) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+
+--
+-- Dumping data for table `orders`
+--
+
+INSERT INTO `orders` (`id`, `user_id`, `notes`, `statues`, `address`, `additional_info`, `phone`, `created_at`, `total_price`, `promo_code`, `admin_id`, `visa`) VALUES
+(1, 1, '', 'accepted', '24 ezzat salama', '', '978965563453453', '2024-06-20 04:14:23', 410, 0, 1, '$2y$10$utFAc/Q0Kl8r7K5GPXwtouCwU/lI/Eu7M4/.J3D/DLpCg63JpFedS'),
+(2, 1, '', 'in_cart', '', NULL, '', '2024-06-20 09:41:04', 0, 0, NULL, '');
 
 -- --------------------------------------------------------
 
@@ -169,8 +185,17 @@ CREATE TABLE `order_details` (
   `product_id` int(11) NOT NULL,
   `order_id` int(11) NOT NULL,
   `quantity` int(191) NOT NULL,
-  `additional_information` text DEFAULT NULL
+  `additional_information` varchar(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+
+--
+-- Dumping data for table `order_details`
+--
+
+INSERT INTO `order_details` (`o_details_id`, `product_id`, `order_id`, `quantity`, `additional_information`) VALUES
+(1, 1, 1, 1, NULL),
+(2, 1, 2, 1, NULL),
+(3, 2, 2, 1, NULL);
 
 -- --------------------------------------------------------
 
@@ -193,17 +218,17 @@ CREATE TABLE `posts` (
 --
 
 INSERT INTO `posts` (`id`, `name`, `description`, `image`, `admin_id`, `artisan_id`, `created_at`) VALUES
-(1, 'New Boho Macramé Clutch Bag', 'Introducing our new Boho Macramé Clutch Bag, handcrafted with natural cotton fibers. Perfect for your daily essentials.', '1718893216-Beach-Boho-Macrame-Clutch-Bag-Montipi-5292.jpg', 0, 1, '2024-06-20 14:20:16'),
-(2, 'Stylish Macramé Shoulder Bag', 'Check out our stylish macramé shoulder bag featuring intricate knot designs. Ideal for casual outings.', '1718893234-01_59020515_2.jpg', 0, 1, '2024-06-20 14:20:34'),
-(3, 'Crafted Leather Bracelets', 'Discover our crafted leather bracelets, handmade with premium quality leather. Perfect for any occasion.', '1718893543-product_2981_1_730.jpeg', 0, 3, '2024-06-20 14:25:43'),
-(4, 'Charming Beads Bracelets', 'Our charming beads bracelets are designed with intricate beadwork. Adds a touch of elegance to your style.', '1718893966-mattenaturalagategoldspacers10mm-2__75456.jpg', 0, 3, '2024-06-20 14:32:46'),
-(5, 'Woven Wonder Bracelets', 'Experience the artistry of our woven wonder bracelets. Handcrafted with care and attention to detail.', '1718894013-eedb1998f5f0ad6ce2ab79c3fdbaa391.jpg', 0, 3, '2024-06-20 14:33:33'),
-(6, 'Textile Art Decor', 'Enhance your home with our textile art decor. Beautifully crafted to add a touch of elegance to any space.', '1718894161-e9f8455ea3573c151c8a37bb2f62327a.jpg', 0, 6, '2024-06-20 14:36:01'),
-(7, 'Pottery Perfection', 'Our pottery perfection pieces are handmade with exquisite detail. Perfect for adding a unique touch to your home.', '1718894194-il_794xN.5538451231_abrm.webp', 0, 7, '2024-06-20 14:36:34'),
-(8, 'Woodcraft Wonders', 'Discover the beauty of our woodcraft wonders. Handcrafted wood decor to enhance any room in your home.', '1718894259-il_794xN.1928598856_6jes.webp', 0, 8, '2024-06-20 14:37:39'),
-(9, 'Urban Street Art', 'Explore our urban street art collection. Bold and vibrant pieces to add an artistic flair to your space.', '1718894311-room45.jpg', 0, 9, '2024-06-20 14:38:31'),
-(10, 'Digital Dreams Art', 'Immerse yourself in our digital dreams art. Innovative and modern pieces to inspire and captivate.', '1718894332-do-professional-digital-painting-portrait.jpg', 0, 10, '2024-06-20 14:38:52'),
-(11, 'New Boho Macramé Clutch Bag', 'Introducing our new Boho Macramé Clutch Bag, handcrafted with natural cotton fibers. Perfect for your daily essentials.', '1718894387-Beach-Boho-Macrame-Clutch-Bag-Montipi-5292.jpg', 0, NULL, '2024-06-20 14:39:47');
+(1, 'New Boho Macramé Clutch Bag', 'Introducing our new Boho Macramé Clutch Bag, handcrafted with natural cotton fibers. Perfect for your daily essentials.', '1718893216-Beach-Boho-Macrame-Clutch-Bag-Montipi-5292.jpg', 0, 1, '2024-06-20 11:20:16'),
+(2, 'Stylish Macramé Shoulder Bag', 'Check out our stylish macramé shoulder bag featuring intricate knot designs. Ideal for casual outings.', '1718893234-01_59020515_2.jpg', 0, 1, '2024-06-20 11:20:34'),
+(3, 'Crafted Leather Bracelets', 'Discover our crafted leather bracelets, handmade with premium quality leather. Perfect for any occasion.', '1718893543-product_2981_1_730.jpeg', 0, 3, '2024-06-20 11:25:43'),
+(4, 'Charming Beads Bracelets', 'Our charming beads bracelets are designed with intricate beadwork. Adds a touch of elegance to your style.', '1718893966-mattenaturalagategoldspacers10mm-2__75456.jpg', 0, 3, '2024-06-20 11:32:46'),
+(5, 'Woven Wonder Bracelets', 'Experience the artistry of our woven wonder bracelets. Handcrafted with care and attention to detail.', '1718894013-eedb1998f5f0ad6ce2ab79c3fdbaa391.jpg', 0, 3, '2024-06-20 11:33:33'),
+(6, 'Textile Art Decor', 'Enhance your home with our textile art decor. Beautifully crafted to add a touch of elegance to any space.', '1718894161-e9f8455ea3573c151c8a37bb2f62327a.jpg', 0, 6, '2024-06-20 11:36:01'),
+(7, 'Pottery Perfection', 'Our pottery perfection pieces are handmade with exquisite detail. Perfect for adding a unique touch to your home.', '1718894194-il_794xN.5538451231_abrm.webp', 0, 7, '2024-06-20 11:36:34'),
+(8, 'Woodcraft Wonders', 'Discover the beauty of our woodcraft wonders. Handcrafted wood decor to enhance any room in your home.', '1718894259-il_794xN.1928598856_6jes.webp', 0, 8, '2024-06-20 11:37:39'),
+(9, 'Urban Street Art', 'Explore our urban street art collection. Bold and vibrant pieces to add an artistic flair to your space.', '1718894311-room45.jpg', 0, 9, '2024-06-20 11:38:31'),
+(10, 'Digital Dreams Art', 'Immerse yourself in our digital dreams art. Innovative and modern pieces to inspire and captivate.', '1718894332-do-professional-digital-painting-portrait.jpg', 0, 10, '2024-06-20 11:38:52'),
+(11, 'New Boho Macramé Clutch Bag', 'Introducing our new Boho Macramé Clutch Bag, handcrafted with natural cotton fibers. Perfect for your daily essentials.', '1718894387-Beach-Boho-Macrame-Clutch-Bag-Montipi-5292.jpg', 0, NULL, '2024-06-20 11:39:47');
 
 -- --------------------------------------------------------
 
@@ -238,9 +263,9 @@ INSERT INTO `products` (`id`, `artisan_id`, `category_id`, `name`, `image`, `des
 (10, 2, 2, 'Beaded Clutch Purse', '1718816944-1000534334_dbcb81b5-58bb-4c1c-894e-c143c040feb9-3X.webp', 'Stunning beaded clutch purse featuring a mesmerizing bead pattern. This versatile clutch adds a pop of color and sparkle to your outfit, making it perfect for special occasions or evenings out.', 1300),
 (11, 2, 2, 'Beaded Crossbody Bag', '1718817564-8376921_1669676.jpg', 'Chic beaded crossbody bag with a stylish and functional design. This trendy bag is embellished with colorful beads and offers hands-free convenience, making it ideal for busy days or nights on the town.', 900),
 (12, 3, 3, 'Classic Leather Tote', '1718834125-cognac-classic-tote-portland-leather-14.webp', 'Timeless and sophisticated, this classic leather tote is crafted from premium quality leather. With its spacious interior and durable construction, it\'s perfect for daily use or as a travel companion.', 2500),
-(13, 3, 3, 'Leather Crossbody Bag', '1718890126-W-BAG-4-CRC_0226.webp', 'Sleek and versatile, this leather crossbody bag is designed for on-the-go lifestyles. Its adjustable strap allows for comfortable wear, while multiple compartments provide ample storage for your essentials.', 2000),
-(14, 3, 3, 'Vintage Leather Satchel', '1718890279-genuine-leather-satchel-82_1080x.webp', 'Embrace retro style with this vintage leather satchel. Handcrafted from supple leather, it features antique hardware and a distressed finish for a unique and timeless look.', 3500),
-(15, 3, 3, 'Vintage Leather Satchel', '1718891085-il_794xN.889530434_3cmb.webp', 'Men Leather Satchel Bag, Messenger Bag for Men, Laptop Bag for School and Business Computer Bag, Vintage Leather Briefcase Handmade', 3000),
+(13, 3, 3, 'Leather Crossbody Bag', '1718906785-WhatsApp Image 2024-06-20 at 20.56.24_8ce6c4d1.jpg', 'Sleek and versatile, this leather crossbody bag is designed for on-the-go lifestyles. Its adjustable strap allows for comfortable wear, while multiple compartments provide ample storage for your essentials.', 2000),
+(14, 3, 3, 'Vintage Leather Satchel', '1718906803-WhatsApp Image 2024-06-20 at 20.56.23_9e044f9a.jpg', 'Embrace retro style with this vintage leather satchel. Handcrafted from supple leather, it features antique hardware and a distressed finish for a unique and timeless look.', 3500),
+(15, 3, 3, 'Vintage Leather Satchel', '1718906814-WhatsApp Image 2024-06-20 at 21.01.08_b3d746e2.jpg', 'Men Leather Satchel Bag, Messenger Bag for Men, Laptop Bag for School and Business Computer Bag, Vintage Leather Briefcase Handmade', 3000),
 (16, 3, 7, 'Engraved Leather Cuff', '1718835642-product_2981_model_1_730.jpeg', 'This leather cuff bracelet features a sleek and modern design with an engraved pattern. Made from durable leather, it provides a comfortable fit and a bold statement piece for any outfit.', 400),
 (17, 3, 7, 'Braided Leather Bracelet', '1718835734-s-l140 (2).webp', 'This braided leather bracelet is handmade with high-quality genuine leather. The intricate braiding adds a touch of elegance and sophistication, making it perfect for both casual and formal occasions.', 300),
 (18, 4, 4, 'Canvas Tote Bag', '1718839910-PXL_20221116_055210103_1024x1024.webp', 'Durable and eco-friendly canvas tote bag, perfect for shopping or daily use. This spacious tote features reinforced handles and a simple, minimalist design, making it a versatile addition to your wardrobe.', 400),
@@ -274,21 +299,21 @@ INSERT INTO `products` (`id`, `artisan_id`, `category_id`, `name`, `image`, `des
 (46, 8, 13, 'Handcrafted Wooden Bowl', '1718851442-il_794xN.1928598856_6jes.webp', 'This exquisite handcrafted wooden bowl adds a touch of rustic charm to your kitchen or dining table. Made from high-quality hardwood, each bowl is unique in grain and texture, making it a stunning centerpiece for serving salads, fruits, or snacks.', 2000),
 (47, 8, 13, 'Wooden Coasters Set', '1718851584-il_794xN.2214458662_haok.webp', 'Protect your furniture in style with this set of wooden coasters. Crafted from sustainably sourced wood, these coasters feature a smooth finish and intricate wood grain patterns. Each set includes four coasters, perfect for entertaining guests or enjoying a quiet evening at home.', 950),
 (48, 8, 13, 'Hand-carved Wooden Serving Tray', '1718851851-il_794xN.3373999227_sxgp.jpg', 'Elevate your hosting game with this hand-carved wooden serving tray. Crafted by skilled artisans, this tray showcases intricate floral motifs and smooth, rounded edges. Whether you\'re serving breakfast in bed or appetizers at a dinner party, this elegant tray adds a touch of sophistication to any occasion.', 1400),
-(50, 9, 17, 'Street Art Mural Print', '1718883006-room45.jpg', 'High-quality print of an original street art mural. This artwork showcases the raw energy and creativity of street artists, making it a perfect addition to modern interiors.', 4000),
-(51, 9, 17, 'Spray Paint Art Piece', '1718883736-il_794xN.5157593220_3cj0.jpg', 'Original spray paint art piece on canvas, capturing the essence of spontaneous creativity. This artwork is a testament to the bold and expressive nature of street art.', 3200),
-(52, 9, 18, 'Geometric Digital Art', '1718883980-il_794xN.4037752413_j4oy.webp', 'A captivating piece of geometric digital art featuring bold shapes and contrasting colors. This artwork is perfect for contemporary interiors and adds a modern touch to your decor.', 2500),
-(53, 9, 18, 'Digital Portrait', '1718884141-do-professional-digital-painting-portrait.jpg', 'A beautifully crafted digital portrait that captures the essence and personality of the subject. This personalized artwork makes an excellent gift or a cherished keepsake.', 3000),
-(54, 9, 21, 'Abstract Wall Mural', '1718884348-a-bold-abstract-wall-mural-in-greens-blues-and-bold-matches-the-color-scheme-of-the-room-and-brings-a-colorful-touch.jpg', 'A vibrant and dynamic abstract wall mural that brings energy and creativity to any space. This mural features bold colors and intricate patterns that create a stunning visual impact.', 3800),
-(55, 9, 21, 'Fantasy Landscape Mural', '1718884841-il_794xN.4978632966_4e1u.webp', 'A whimsical and enchanting fantasy landscape mural that sparks imagination and creativity. Perfect for children\'s rooms, creative studios, or anyone who loves a touch of magic.', 3700),
-(56, 10, 19, 'Personalized Family Portrait', '1718886218-Family-Portrait-Wall-Art-Print-1b.jpg', 'dimensions: 8 x 10.\r\nA custom family portrait hand-drawn with attention to detail. This personalized piece captures the unique characteristics and personalities of each family member, making it a cherished keepsake for years to come.', 1500),
-(57, 10, 19, 'Pet portrait', '1718891341-s-l1600.webp', 'Dimensions: 8 x 10.\r\nHand-painted portraits of your beloved pets. These detailed and lifelike renderings celebrate the special bond you share with your furry friends, making them a perfect gift for any pet lover.', 900),
-(58, 10, 20, 'Handcrafted Wooden Sculpture', '1718888214-il_794xN.3685196923_m0t7.webp', 'Exquisite handcrafted wooden sculpture made from high-quality oak. This intricate piece captures the natural beauty of the wood, showcasing detailed craftsmanship and artistic expression. Perfect as a statement piece for your home or office.', 2000),
-(59, 10, 20, 'Custom Wooden Furniture', '1718888371-il_794xN.3189469692_4g3d.webp', 'Custom-made wooden furniture piece designed to fit your space perfectly. Crafted from premium walnut wood, this furniture combines functionality with artistic design, offering both elegance and practicality for your home', 4000),
-(60, 10, 21, 'Nature-Inspired Wall Mural', '1718888690-il_794xN.5215973774_iicz.webp', 'A serene and calming nature-inspired wall mural depicting lush landscapes and tranquil scenes. Perfect for creating a peaceful atmosphere in your home or office.', 2750),
-(61, 10, 18, 'Abstract Digital Painting', '1718888916-haitam-ouahabi-jpg-artwork-abstract-art-painting-nft-digital-art-by-haitam-ouahabi-artstation.jpg', 'A stunning abstract digital painting that blends vibrant colors and dynamic shapes to create a mesmerizing visual experience. Perfect for modern home decor or as a unique statement piece.', 2300),
-(62, 10, 17, 'Urban Graffiti Canvas', '1718889169-He8c8d8b326b54e31a44c3a034d173c57J.webp', 'Vibrant urban graffiti canvas featuring a dynamic mix of colors and patterns. This piece captures the essence of street culture and adds a bold statement to any space.', 3200),
-(63, 9, 19, 'Watercolor Portraits', '1718889586-il_794xN.4924634799_jjjh.webp', 'Delicate and vibrant watercolor portraits that bring your loved ones to life on paper. These unique pieces use flowing colors and soft brushstrokes to capture the essence and emotion of the subject.', 3200),
-(64, 9, 20, 'Artisan Wooden Wall Art', '1718889825-48e77ffc3d9d4b2888f87b7e39c06e4a.webp', 'Unique wooden wall art crafted from reclaimed wood pieces. This stunning artwork combines various wood textures and colors to create a captivating visual display. Perfect for adding warmth and character to any room.', 4000);
+(50, 9, 17, 'Street Art Mural Print', '1718910454-WhatsApp Image 2024-06-20 at 21.33.06_367cf434.jpg', 'High-quality print of an original street art mural. This artwork showcases the raw energy and creativity of street artists, making it a perfect addition to modern interiors.', 4000),
+(51, 9, 17, 'Spray Paint Art Piece', '1718907057-WhatsApp Image 2024-06-20 at 21.09.10_433b6d04.jpg', 'Original spray paint art piece on canvas, capturing the essence of spontaneous creativity. This artwork is a testament to the bold and expressive nature of street art.', 3200),
+(52, 9, 18, 'Geometric Digital Art', '1718910319-WhatsApp Image 2024-06-20 at 21.18.04_163a8732.jpg', 'A captivating piece of geometric digital art featuring bold shapes and contrasting colors. This artwork is perfect for contemporary interiors and adds a modern touch to your decor.', 2500),
+(53, 9, 18, 'Digital Portrait', '1718910332-WhatsApp Image 2024-06-20 at 21.19.10_c1c52fe1.jpg', 'A beautifully crafted digital portrait that captures the essence and personality of the subject. This personalized artwork makes an excellent gift or a cherished keepsake.', 3000),
+(54, 9, 21, 'Abstract Wall Mural', '1718910381-WhatsApp Image 2024-06-20 at 21.21.00_0ddb2ec9.jpg', 'A vibrant and dynamic abstract wall mural that brings energy and creativity to any space. This mural features bold colors and intricate patterns that create a stunning visual impact.', 3800),
+(55, 9, 21, 'Fantasy Landscape Mural', '1718910393-WhatsApp Image 2024-06-20 at 21.21.45_5b0016f5.jpg', 'A whimsical and enchanting fantasy landscape mural that sparks imagination and creativity. Perfect for children\'s rooms, creative studios, or anyone who loves a touch of magic.', 3700),
+(56, 10, 19, 'Personalized Family Portrait', '1718910539-WhatsApp Image 2024-06-20 at 21.36.07_55963803.jpg', 'dimensions: 8 x 10.\r\nA custom family portrait hand-drawn with attention to detail. This personalized piece captures the unique characteristics and personalities of each family member, making it a cherished keepsake for years to come.', 1500),
+(57, 10, 19, 'Pet portrait', '1718910550-WhatsApp Image 2024-06-20 at 21.40.04_15d5f62c.jpg', 'Dimensions: 8 x 10.\r\nHand-painted portraits of your beloved pets. These detailed and lifelike renderings celebrate the special bond you share with your furry friends, making them a perfect gift for any pet lover.', 900),
+(58, 10, 20, 'Handcrafted Wooden Sculpture', '1718910562-WhatsApp Image 2024-06-20 at 21.40.54_6ab0e5af.jpg', 'Exquisite handcrafted wooden sculpture made from high-quality oak. This intricate piece captures the natural beauty of the wood, showcasing detailed craftsmanship and artistic expression. Perfect as a statement piece for your home or office.', 2000),
+(59, 10, 20, 'Custom Wooden Furniture', '1718910578-WhatsApp Image 2024-06-20 at 21.41.27_39fdadf0.jpg', 'Custom-made wooden furniture piece designed to fit your space perfectly. Crafted from premium walnut wood, this furniture combines functionality with artistic design, offering both elegance and practicality for your home', 4000),
+(60, 10, 21, 'Nature-Inspired Wall Mural', '1718910591-WhatsApp Image 2024-06-20 at 21.55.56_ebd1eedc.jpg', 'A serene and calming nature-inspired wall mural depicting lush landscapes and tranquil scenes. Perfect for creating a peaceful atmosphere in your home or office.', 2750),
+(61, 10, 18, 'Abstract Digital Painting', '1718910525-WhatsApp Image 2024-06-20 at 21.35.05_efc7302d.jpg', 'A stunning abstract digital painting that blends vibrant colors and dynamic shapes to create a mesmerizing visual experience. Perfect for modern home decor or as a unique statement piece.', 2300),
+(62, 10, 17, 'Urban Graffiti Canvas', '1718910511-WhatsApp Image 2024-06-20 at 21.34.05_cd48235b.jpg', 'Vibrant urban graffiti canvas featuring a dynamic mix of colors and patterns. This piece captures the essence of street culture and adds a bold statement to any space.', 3200),
+(63, 9, 19, 'Watercolor Portraits', '1718910353-WhatsApp Image 2024-06-20 at 21.19.48_32f05813.jpg', 'Delicate and vibrant watercolor portraits that bring your loved ones to life on paper. These unique pieces use flowing colors and soft brushstrokes to capture the essence and emotion of the subject.', 3200),
+(64, 9, 20, 'Artisan Wooden Wall Art', '1718910368-WhatsApp Image 2024-06-20 at 21.20.27_627aab39.jpg', 'Unique wooden wall art crafted from reclaimed wood pieces. This stunning artwork combines various wood textures and colors to create a captivating visual display. Perfect for adding warmth and character to any room.', 4000);
 
 -- --------------------------------------------------------
 
@@ -308,18 +333,14 @@ CREATE TABLE `reservations` (
   `user_status` varchar(191) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
--- --------------------------------------------------------
-
 --
--- Table structure for table `transactions`
+-- Dumping data for table `reservations`
 --
 
-CREATE TABLE `transactions` (
-  `id` int(11) NOT NULL,
-  `user_id` int(11) NOT NULL,
-  `cash` varchar(191) NOT NULL,
-  `visa` varchar(191) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+INSERT INTO `reservations` (`id`, `user_id`, `artisan_id`, `name`, `description`, `image`, `price`, `artisan_status`, `user_status`) VALUES
+(1, 1, 1, '123', '123', '1718799688-bag.jpg', 120, 'accepted', 'pending'),
+(2, 1, 1, '123', '1234', '1718803244-bags.jpg', 350, 'pending', 'pending'),
+(3, 1, NULL, 'asd', 'asd', '1718803651-craftart.jpg', NULL, 'pending', 'pending');
 
 -- --------------------------------------------------------
 
@@ -438,13 +459,6 @@ ALTER TABLE `reservations`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `transactions`
---
-ALTER TABLE `transactions`
-  ADD PRIMARY KEY (`id`),
-  ADD KEY `user_id` (`user_id`);
-
---
 -- Indexes for table `users`
 --
 ALTER TABLE `users`
@@ -482,19 +496,19 @@ ALTER TABLE `category`
 -- AUTO_INCREMENT for table `feedback`
 --
 ALTER TABLE `feedback`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `orders`
 --
 ALTER TABLE `orders`
-  MODIFY `id` int(191) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(191) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `order_details`
 --
 ALTER TABLE `order_details`
-  MODIFY `o_details_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `o_details_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `posts`
@@ -512,13 +526,7 @@ ALTER TABLE `products`
 -- AUTO_INCREMENT for table `reservations`
 --
 ALTER TABLE `reservations`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT for table `transactions`
---
-ALTER TABLE `transactions`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `users`
@@ -530,7 +538,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `wishlist`
 --
 ALTER TABLE `wishlist`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
