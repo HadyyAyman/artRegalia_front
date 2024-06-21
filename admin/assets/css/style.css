@@ -1,82 +1,123 @@
-/*================================================================================
-	Item Name: Modern Admin - Clean Bootstrap 4 Dashboard HTML Template
-	Version: 1.0
-	Author: PIXINVENT
-	Author URL: http://www.themeforest.net/user/pixinvent
-================================================================================
+:root {
+  --left-bg-color: rgba(73, 80, 87, 0.7);
+  --right-bg-color: rgba(52, 58, 64, 0.7);
+  --left-btn-hover-color: rgba(52, 58, 64);
+  --right-btn-hover-color: rgba(33, 37, 41);
+  --hover-width: 75%;
+  --other-width: 25%;
+  --speed: 1000ms;
+  --transition-1: 0.25s ease;
+  --transition-2: 0.5s ease;
+  --cubic-out: cubic-bezier(0.51, 0.03, 0.64, 0.28);
+  --cubic-in: cubic-bezier(0.33, 0.85, 0.56, 1.02);
+  --color1: #F8F9FA;
+  --color2: #E9ECEF;
+  --color3: #DEE2E6;
+  --color4: #CED4DA;
+  --color5: #ADB5BD;
+  --color6: #6C757D;
+  --color7: #495057;
+  --color8: #343A40;
+  --color9: #212529;
+}
 
-NOTE:
-------
-PLACE HERE YOUR OWN SCSS CODES AND IF NEEDED, OVERRIDE THE STYLES FROM THE OTHER STYLESHEETS.
-WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BETTER LIKE THIS.  */
-.color-primary{
-	color: #285daf !important;
+.color-primary {
+  color: #212529 !important;
 }
-.color-secondary{
-	color:#3f80cd !important;
+
+.color-secondary {
+  color: #3f80cd !important;
 }
-.color-third{
-	color:#4ab69c !important;
+
+.color-third {
+  color: #4ab69c !important;
 }
-.color-forth{
-	color:#8d4cba !important;
+
+.color-forth {
+  color: #8d4cba !important;
 }
-.color-fifth{
-	color:#723d93 !important;
+
+.color-fifth {
+  color: #723d93 !important;
 }
-.bg-primary{
-	background-color: #285daf !important;
+
+.bg-primary {
+  background-color: #343A40 !important;
 }
-.bg-secondary{
-	background-color:#3f80cd !important;
+
+.card-header.bg-primary {
+  background-color: #343A40 !important;
 }
-.bg-third{
-	background-color:#4ab69c !important;
+
+.bg-secondary {
+  background-color: #3f80cd !important;
 }
-.btn-success{
-	background-color:#4ab69c !important;
+
+.bg-third {
+  background-color: #4ab69c !important;
 }
-.bg-forth{
-	background-color: #8d4cba !important;
+
+.btn-success {
+  background-color: #4ab69c !important;
 }
-.bg-fifth{
-	background-color:#723d93 !important;
+
+.bg-forth {
+  background-color: #8d4cba !important;
 }
-.card-header.bg-primary{
-	background-color: #285daf !important;
+
+.bg-fifth {
+  background-color: #723d93 !important;
 }
-.btn-primary{
-	background-color: #285daf !important;
-	color:#fff;
+
+.card-header.bg-primary {
+  background-color: #285daf !important;
 }
-.btn-outline-primary{
-	border: 2px solid #285daf !important;
-	color: #285daf !important;
+
+.btn-primary {
+  background-color: #285daf !important;
+  color: #fff;
 }
-.btn-outline-primary:hover{
-	border: 2px solid #285daf !important;
-	background-color: #285daf !important;
-	color:#fff !important;
+
+.btn-outline-primary {
+  border: 2px solid #285daf !important;
+  color: #285daf !important;
 }
-.page-item.active .page-link{
-	background-color: #285daf !important;
-	color:#fff;
+
+.btn-outline-primary:hover {
+  border: 2px solid #285daf !important;
+  background-color: #285daf !important;
+  color: #fff !important;
 }
-.page-item .page-link{
-	color: #285daf;
-	border: 1px solid #285daf !important;
+
+.page-item.active .page-link {
+  background-color: #285daf !important;
+  color: #fff;
 }
-.main-menu.menu-light .navigation li a{
-	color: #285daf;
-	font-weight:500;
+
+.page-item .page-link {
+  color: #285daf;
+  border: 1px solid #285daf !important;
 }
-.logo{
-	height:150px
+
+.main-menu.menu-light .navigation li a {
+  color: #495057;
+  font-weight: 500;
 }
-.nav-pills .nav-link.active{
-	color: #fff;
-    background-color: #285daf ;
+
+.main-menu.menu-light .navigation li a:hover {
+  color: #212529;
+  font-weight: 500;
 }
+
+.logo {
+  height: 150px
+}
+
+.nav-pills .nav-link.active {
+  color: #fff;
+  background-color: #212529;
+}
+
 /* .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
     color: #285daf;
     background-color: #fff;
@@ -86,12 +127,12 @@ WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BET
 .nav-tabs .nav-link a{
 	color: #000;
 } */
-  .nav-tabs .nav-link.active {
-        color: #285daf;
-        background-color: #fff;
-        border-color: none;
-      border-bottom: 2px solid #285daf;
-      border-top: none;
-      border-left: none;
-      border-right: none;
-    }
+.nav-tabs .nav-link.active {
+  color: #212529;
+  background-color: #fff;
+  border-color: none;
+  border-bottom: 2px solid #212529;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
