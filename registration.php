@@ -37,7 +37,7 @@ include("functions/authentication_function.php");
 
 
   <main class="login-page">
-    <div class="form" style="margin-top: 150px;">
+    <div class="form" style="margin-top: 250px;">
     <?php if(isset($error)) { ?>
         <div class="alert alert-danger" role="alert">
           <?php echo $error ?>
