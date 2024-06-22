@@ -22,15 +22,15 @@
 }
 
 .color-primary {
-  color: #285daf !important;
+  color: #E9ECEF !important;
 }
 
 .color-secondary {
-  color: #3f80cd !important;
+  color: #E9ECEF !important;
 }
 
 .color-third {
-  color: #4ab69c !important;
+  color: #E9ECEF !important;
 }
 
 .color-forth {
@@ -42,19 +42,26 @@
 }
 
 .bg-primary {
-  background-color: #285daf !important;
+  background-color: #212529 !important;
 }
 
 .bg-secondary {
-  background-color: #3f80cd !important;
+  background-color: #212529 !important;
 }
 
 .bg-third {
-  background-color: #4ab69c !important;
+  background-color: #495057 !important;
 }
 
 .btn-success {
-  background-color: #4ab69c !important;
+  background-color: #343A40 !important;
+  border-color: #343A40 !important;
+}
+
+.btn-success:hover {
+  border-color: #212529 !important;
+  background-color: #212529 !important;
+  color: #FFF !important;
 }
 
 .bg-forth {
@@ -65,8 +72,12 @@
   background-color: #723d93 !important;
 }
 
+.bg-warning {
+  background-color: #495057 !important;
+}
+
 .card-header.bg-primary {
-  background-color: #285daf !important;
+  background-color: #343A40 !important;
 }
 
 .btn-primary {
@@ -96,7 +107,12 @@
 }
 
 .main-menu.menu-light .navigation li a {
-  color: #285daf;
+  color: #495057;
+  font-weight: 500;
+}
+
+.main-menu.menu-light .navigation li a:hover {
+  color: #212529 !important;
   font-weight: 500;
 }
 
@@ -114,10 +130,10 @@
 	color: #000;
 } */
 .nav-tabs .nav-link.active {
-  color: #285daf;
+  color: #212529;
   background-color: #fff;
   border-color: none;
-  border-bottom: 2px solid #285daf;
+  border-bottom: 2px solid #212529;
   border-top: none;
   border-left: none;
   border-right: none;
